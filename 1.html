@@ -5,9 +5,46 @@
     <title>ROMEO WHISKEY</title>
     <meta charset="utf-8">
     <style>
+        .imgCat{
+            float:left;
+            clear:both; /*float의 지랄맞은 자석기능 없애기*/
+            margin:auto;
+        }
         a{
             color:rgb(12, 145, 132);
             text-decoration: none;
+        }
+        h1{
+            font-size:50px;
+            text-align:center;
+        }
+        body{
+            width: 1000px; /*전체 공간 1000픽셀*/
+            margin:20px auto; /*위 마진 20px 양쪽 마진 auto*/
+        }
+        #navi{
+            height:50px;
+            width:1000px;
+            background-color: black;
+        }
+        
+        #navi ul li{
+            list-style:none;
+            float:right;
+            line-height: 50px;          
+            vertical-align: middle; /*???*/    
+            text-align: center; 
+        }
+        #navi .menuNavi{
+            text-decoration:none;                    
+            color:rgb(12, 145, 132);                             
+            display: block;     /*글자영역 전체에 링크적용*/                      
+            width: 150px;                             
+            font-size: 15px;                          
+            font-weight: bold;                       
+        }
+        #navi a:hover, #navi a:focus{
+            color:rgb(145, 72, 145);
         }
     </style>
 </head>
@@ -15,33 +52,40 @@
 <body>
     <header>
         <div id="logo">
-        <a href="#"><h1><a href="1.html">JIN</a> OCC PHONE NUMBER LIST AS BELOW</h1></a>
+        <img src="cat2.jpg" width="200" class="imgCat">
+        <a href="#"><h1><a href="1.html">JIN</a> OCC PHONE NUMBER LIST</h1></a>
+        <br>
         </div>
 
-        <nav>
+        <nav id="navi">
             <ul id="topMenu">
-                <li><a href="2.html">AIP</a></li>
-                <li><a href="3.html">진에어 항공기</a></li>
+                <li><a href="2.html" class="menuNavi">AIP</a></li>
+                <li><a href="3.html" class="menuNavi">FLEET LIST</a></li>
             </ul>
         </nav>
     </header>
    
     <style>
-        .myDiv {
-            border: 5px outset rgb(83, 217, 150);
-            background-color: rgb(172, 215, 134);
+        .myDiv ul li{
+            list-style:none;
+            float:left;
             text-align: center;
-            width: 300px;
+            width:55px;
+            height:30px;
         }
+        .myDiv {
+            margin-top:20px;
+            border: 5px outset rgb(187, 220, 161);
+            background-color: rgb(156, 206, 107);
+            text-align: center;
+            height:130px;
+        }
+        
     </style>
-
-    <img src="cat2.jpg" width="400">
-    <p>
-    </p>
 
     <div class="myDiv">
         <h2>JNA Station</h2>
-        <ol>
+        <ul>
             <li><a href="#ggmp">GMP</a></li>
             <li><a href="#iicn">ICN</a></li>
             <li><a href="#ccju">CJU</a></li>
@@ -57,10 +101,6 @@
             <li><a href="#kkuv">KUV</a></li>
             <li><a href="#hhin">HIN</a></li>
             <li><a href="#yyny">YNY</a></li>
-            <li><a href="2.html">AIP </a></li>
-            <li><a href="3.html">진에어 항공기</a></li>
-        </ol>
-        <ul>
             <li><a href="#gita">기타</a></li>
         </ul>
     </div>

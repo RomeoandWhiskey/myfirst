@@ -5,62 +5,65 @@
     <title>JIN fleet</title>
     <meta charset="utf-8">
     <style>
+        .imgCat{
+            float:left;
+            clear:both; /*float의 지랄맞은 자석기능 없애기*/
+            margin:auto;
+        }
         a{
             color:rgb(12, 145, 132);
             text-decoration: none;
         }
-        .myDiv {
-            border: 5px outset rgb(83, 217, 150);
-            background-color: rgb(172, 215, 134);
-            text-align: center;
-            width: 300px;
+        h1{
+            font-size:50px;
+            text-align:center;
+        }
+        body{
+            width: 1000px; /*전체 공간 1000픽셀*/
+            margin:20px auto; /*위 마진 20px 양쪽 마진 auto*/
+        }
+        #navi{
+            height:50px;
+            width:1000px;
+            background-color: black;
+        }
+        #navi ul li{
+            list-style:none;
+            float:right;
+            line-height: 50px;          
+            vertical-align: middle; /*???*/    
+            text-align: center; 
+        }
+        #navi .menuNavi{
+            text-decoration:none;                    
+            color:rgb(12, 145, 132);                             
+            display: block;     /*글자영역 전체에 링크적용*/                      
+            width: 150px;                             
+            font-size: 15px;                          
+            font-weight: bold;                       
+        }
+        #navi a:hover, #navi a:focus{
+            color:rgb(145, 72, 145);
         }
     </style>
 </head>
 
 <body>
     <header>
+        <img src="cat2.jpg" width="200" class="imgCat">
         <div id="logo">
         <a href="#"><h1><a href="1.html">JIN</a> AIRFLEET LIST</h1></a>
+        <br>
         </div>
 
-        <nav>
+        <nav id="navi">
             <ul id="topMenu">
-                <li><a href="2.html">AIP</a></li>
-                <li><a href="3.html" style="color:blueviolet">진에어 항공기</a></li>
+                <li><a href="2.html" class="menuNavi">AIP</a></li>
+                <li><a href="3.html" class="menuNavi">FLEET LIST</a></li>
             </ul>
         </nav>
     </header>
 
-    <img src="cat2.jpg" width="400">
-    <p>
-    </p>
-
-    <div class="myDiv">
-        <h2>JNA Station</h2>
-        <ol>
-            <li>GMP</li>
-            <li>ICN</li>
-            <li>CJU</li>
-            <li>TAE</li>
-            <li>CJJ</li>
-            <li>PUS</li>
-            <li>KWJ</li>
-            <li>MWX</li>
-            <li>USN</li>
-            <li>RSU</li>
-            <li>WJU</li>
-            <li>KPO</li>
-            <li>KUV</li>
-            <li>HIN</li>
-            <li>YNY</li>
-            <li><a href="2.html">AIP</a></li>
-            <li style="color:blueviolet;text-underline-offset:underline">진에어 항공기</li>
-        </ol>
-        <ul>
-            <li>기타</li>
-        </ul>
-    </div>
 
     <h4>보유 기종</h4>
     <table border="3">

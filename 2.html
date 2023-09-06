@@ -5,15 +5,45 @@
     <title>JIN start day</title>
     <meta charset="utf-8">
     <style>
+        .imgCat{
+            float:left;
+            clear:both; /*float의 지랄맞은 자석기능 없애기*/
+            margin:auto;
+        }
         a{
             color:rgb(12, 145, 132);
             text-decoration: none;
         }
-        .myDiv {
-            border: 5px outset rgb(83, 217, 150);
-            background-color: rgb(172, 215, 134);
-            text-align: center;
-            width: 300px;
+        h1{
+            font-size:50px;
+            text-align:center;
+        }
+        body{
+            width: 1000px; /*전체 공간 1000픽셀*/
+            margin:20px auto; /*위 마진 20px 양쪽 마진 auto*/
+        }
+        #navi{
+            height:50px;
+            width:1000px;
+            background-color: black;
+        }
+        #navi ul li{
+            list-style:none;
+            float:right;
+            line-height: 50px;          
+            vertical-align: middle; /*???*/    
+            text-align: center; 
+        }
+        #navi .menuNavi{
+            text-decoration:none;                    
+            color:rgb(12, 145, 132);                             
+            display: block;     /*글자영역 전체에 링크적용*/                      
+            width: 150px;                             
+            font-size: 15px;                          
+            font-weight: bold;                       
+        }
+        #navi a:hover, #navi a:focus{
+            color:rgb(145, 72, 145);
         }
     </style>
 </head>
@@ -21,57 +51,30 @@
 <body>
     <header>
         <div id="logo">
+        <img src="cat2.jpg" width="200" class="imgCat">
         <a href="#"><h1><a href="1.html">JIN</a> AIP LIST</h1></a>
+        <br>
         </div>
 
-        <nav>
+        <nav id="navi">
             <ul id="topMenu">
-                <li><a href="2.html" style="color:blueviolet; text-decoration:underline;">AIP</a></li>
-                <li><a href="3.html">진에어 항공기</a></li>
+                <li><a href="2.html" class="menuNavi">AIP</a></li>
+                <li><a href="3.html" class="menuNavi">FLEET LIST</a></li>
             </ul>
         </nav>
     </header>
 
-    <img src="cat2.jpg" width="400">
-    <p>
-    </p>
-
-    <div class="myDiv">
-        <h2>JNA Station</h2>
-        <ol>
-            <li>GMP</li>
-            <li>ICN</li>
-            <li>CJU</li>
-            <li>TAE</li>
-            <li>CJJ</li>
-            <li>PUS</li>
-            <li>KWJ</li>
-            <li>MWX</li>
-            <li>USN</li>
-            <li>RSU</li>
-            <li>WJU</li>
-            <li>KPO</li>
-            <li>KUV</li>
-            <li>HIN</li>
-            <li>YNY</li>
-            <li style="color:blueviolet">AIP</li>
-            <li><a href="3.html">진에어 항공기</a></li>
-        </ol>
-        <ul>
-            <li>기타</li>
-        </ul>
-    </div>
 
     <h4>AIP</h4>
     <table border="1">
         <th>WEBSITE LINK</th>
         <th>내용</th>
         <tr>
-            <td><a href="https://www.eurocontrol.int/">EURO CONTROL</a></td>
+            <td><a href="https://www.eurocontrol.int/" target="_blank">EURO CONTROL</a></td>
             <td>전세계 AIP 관련 사이트 모음</td>
         </tr>
         <tr>
-            <td><a href="https://www.faa.gov/international_affairs">FAA WORLD WIDE</a></td>
+            <td><a href="https://www.faa.gov/international_affairs" target="_blank">FAA WORLD WIDE</a></td>
             <td>전세계 항공기관 DB모음</td>
         </tr>
     </table>
@@ -86,7 +89,7 @@
             <td></td>
             <td>ARMENIA </td>
             <td><a href="https://www.ead.eurocontrol.int/cms-eadbasic/opencms/en/login/ead-basic/" target="_blank">EAD BASIC</a></td>
-            <td>ID: jinair01 PW: jinairocc0717</td>
+            <td>ID: koreanair2018 PW: koreanair2017</td>
         </tr>
         <tr>
             <td></td>
@@ -98,19 +101,19 @@
             <td>3</td>
             <td>AUSTRIA </td>
             <td><a href="https://www.ead.eurocontrol.int/cms-eadbasic/opencms/en/login/ead-basic/" target="_blank">EAD BASIC</a></td>
-            <td>ID: jinair01 PW: jinairocc0717</td>
+            <td>ID: koreanair2018 PW: koreanair2017</td>
         </tr>
         <tr>
             <td>4</td>
             <td>AZERBAIJAN </td>
             <td><a href="https://www.ead.eurocontrol.int/cms-eadbasic/opencms/en/login/ead-basic/" target="_blank">EAD BASIC</a></td>
-            <td>ID: jinair01 PW: jinairocc0717</td>
+            <td>ID: koreanair2018 PW: koreanair2017</td>
         </tr>
         <tr>
             <td>5</td>
             <td>BAHRAIN </td>
             <td><a href="https://www.ead.eurocontrol.int/cms-eadbasic/opencms/en/login/ead-basic/" target="_blank">BAHRAIN AIP</a></td>
-            <td></td>
+            <td>ID: koreanair2018 PW: koreanair2017</td>
         </tr>
         <tr>
             <td>6</td>
@@ -122,13 +125,13 @@
             <td>7</td>
             <td>BELARUS</td>
             <td><a href="https://www.ead.eurocontrol.int/cms-eadbasic/opencms/en/login/ead-basic/" target="_blank">EAD BASIC</a></td>
-            <td>ID: jinair01 PW: jinairocc0717</td>
+            <td>ID: koreanair2018 PW: koreanair2017</td>
         </tr>
         <tr>
             <td>8</td>
             <td>BELGIUM</td>
             <td><a href="https://www.ead.eurocontrol.int/cms-eadbasic/opencms/en/login/ead-basic/" target="_blank">EAD BASIC</a></td>
-            <td>ID: jinair01 PW: jinairocc0717</td>
+            <td>ID: koreanair2018 PW: koreanair2017</td>
         </tr>
         <tr>
             <td>9</td>
@@ -154,7 +157,7 @@
             <td>12</td>
             <td>BULGARIA</td>
             <td><a href="https://www.ead.eurocontrol.int/cms-eadbasic/opencms/en/login/ead-basic/" target="_blank">EAD BASIC</a></td>
-            <td>ID: jinair01 PW: jinairocc0717</td>
+            <td>ID: koreanair2018 PW: koreanair2017</td>
         </tr>
         <tr>
             <td>13</td>
@@ -206,14 +209,14 @@
             <td></td>
             <td>HUNGARY</td>
             <td><a href="http://www.ead.eurocontrol.int/publicuser/public/pu/login.do" target="_blank">EAD BASIC</a></td>
-            <td>ID: jinair01 PW: jinairocc0717</td>
+            <td>ID: koreanair2018 PW: koreanair2017</td>
         </tr>
 
         <tr>
             <td></td>
             <td>ICELAND</td>
             <td><a href="http://www.ead.eurocontrol.int/publicuser/public/pu/login.do" target="_blank">EAD BASIC</a></td>
-            <td>ID: jinair01 PW: jinairocc0717</td>
+            <td>ID: koreanair2018 PW: koreanair2017</td>
         </tr>
 
         <tr>
@@ -249,7 +252,7 @@
             <td></td>
             <td>IRELAND</td>
             <td><a href="http://www.ead.eurocontrol.int/publicuser/public/pu/login.do" target="_blank">EAD BASIC</a></td>
-            <td>ID: jinair01 PW: jinairocc0717</td>
+            <td>ID: koreanair2018 PW: koreanair2017</td>
         </tr>
 
         <tr>
@@ -264,7 +267,7 @@
             <td></td>
             <td>ITALY</td>
             <td><a href="http://www.ead.eurocontrol.int/publicuser/public/pu/login.do" target="_blank">EAD BASIC</a></td>
-            <td>ID: jinair01 PW: jinairocc0717</td>
+            <td>ID: koreanair2018 PW: koreanair2017</td>
         </tr>
 
         <tr>
@@ -278,7 +281,7 @@
             <td></td>
             <td>JORDAN</td>
             <td><a href="http://www.ead.eurocontrol.int/publicuser/public/pu/login.do" target="_blank">EAD BASIC</a></td>
-            <td>ID: jinair01 PW: jinairocc0717</td>
+            <td>ID: koreanair2018 PW: koreanair2017</td>
         </tr>
 
 
@@ -286,7 +289,7 @@
             <td></td>
             <td>KAZAKHSTAN</td>
             <td><a href="http://www.ead.eurocontrol.int/publicuser/public/pu/login.do" target="_blank">EAD BASIC</a></td>
-            <td>ID: jinair01 PW: jinairocc0717</td>
+            <td>ID: koreanair2018 PW: koreanair2017</td>
         </tr>
 
         <tr>
@@ -328,21 +331,21 @@
             <td></td>
             <td>LATVIA</td>
             <td><a href="http://www.ead.eurocontrol.int/publicuser/public/pu/login.do" target="_blank">EAD BASIC</a></td>
-            <td>ID: jinair01 PW: jinairocc0717</td>
+            <td>ID: koreanair2018 PW: koreanair2017</td>
         </tr>
 
         <tr>
             <td></td>
             <td>LITHUANIA</td>
             <td><a href="http://www.ead.eurocontrol.int/publicuser/public/pu/login.do" target="_blank">EAD BASIC</a></td>
-            <td>ID: jinair01 PW: jinairocc0717</td>
+            <td>ID: koreanair2018 PW: koreanair2017</td>
         </tr>
 
         <tr>
             <td></td>
             <td>LUXEMBOURG</td>
             <td><a href="http://www.ead.eurocontrol.int/publicuser/public/pu/login.do" target="_blank">EAD BASIC</a></td>
-            <td>ID: jinair01 PW: jinairocc0717</td>
+            <td>ID: koreanair2018 PW: koreanair2017</td>
         </tr>
 
 
@@ -372,7 +375,7 @@
             <td></td>
             <td>MALTA</td>
             <td><a href="http://www.ead.eurocontrol.int/publicuser/public/pu/login.do" target="_blank">EAD BASIC</a></td>
-            <td>ID: jinair01 PW: jinairocc0717</td>
+            <td>ID: koreanair2018 PW: koreanair2017</td>
         </tr>
 
         <tr>
@@ -395,7 +398,7 @@
             <td></td>
             <td>MOLDOVA</td>
             <td><a href="http://www.ead.eurocontrol.int/publicuser/public/pu/login.do">EAD BASIC</a></td>
-            <td>ID: jinair01 PW: jinairocc0717</td>
+            <td>ID: koreanair2018 PW: koreanair2017</td>
         </tr>
 
         <tr>
@@ -430,7 +433,7 @@
             <td></td>
             <td>NETHERLANDS</td>
             <td><a href="http://www.ead.eurocontrol.int/publicuser/public/pu/login.do">EAD BASIC</a></td>
-            <td>ID: jinair01 PW: jinairocc0717</td>
+            <td>ID: koreanair2018 PW: koreanair2017</td>
         </tr>
 
         <tr>
@@ -451,7 +454,7 @@
             <td></td>
             <td>NORWAY</td>
             <td><a href="http://www.ead.eurocontrol.int/publicuser/public/pu/login.do">EAD BASIC</a></td>
-            <td>ID: jinair01 PW: jinairocc0717</td>
+            <td>ID: koreanair2018 PW: koreanair2017</td>
         </tr>
 
         <tr>
@@ -495,7 +498,7 @@
             <td></td>
             <td>PHILIPPINES</td>
             <td><a href="http://www.ead.eurocontrol.int/publicuser/public/pu/login.do">EAD BASIC</a></td>
-            <td>ID: jinair01 PW: jinairocc0717</td>
+            <td>ID: koreanair2018 PW: koreanair2017</td>
         </tr>
 
         <tr>
@@ -512,21 +515,21 @@
             <td></td>
             <td>POLAND</td>
             <td><a href="http://www.ead.eurocontrol.int/publicuser/public/pu/login.do">EAD BASIC</a></td>
-            <td>ID: jinair01 PW: jinairocc0717</td>
+            <td>ID: koreanair2018 PW: koreanair2017</td>
         </tr>
 
         <tr>
             <td></td>
             <td>PORTUGAL</td>
             <td><a href="http://www.ead.eurocontrol.int/publicuser/public/pu/login.do">EAD BASIC</a></td>
-            <td>ID: jinair01 PW: jinairocc0717</td>
+            <td>ID: koreanair2018 PW: koreanair2017</td>
         </tr>
 
         <tr>
             <td></td>
             <td>ROMANIA</td>
             <td><a href="http://www.ead.eurocontrol.int/publicuser/public/pu/login.do">EAD BASIC</a></td>
-            <td>ID: jinair01 PW: jinairocc0717</td>
+            <td>ID: koreanair2018 PW: koreanair2017</td>
         </tr>
 
         <tr>
@@ -556,14 +559,14 @@
             <td></td>
             <td>SLOVAKIA</td>
             <td><a href="http://www.ead.eurocontrol.int/publicuser/public/pu/login.do">EAD BASIC</a></td>
-            <td>ID: jinair01 PW: jinairocc0717</td>
+            <td>ID: koreanair2018 PW: koreanair2017</td>
         </tr>
 
         <tr>
             <td></td>
             <td>SLOVENIA</td>
             <td><a href="http://www.ead.eurocontrol.int/publicuser/public/pu/login.do">EAD BASIC</a></td>
-            <td>ID: jinair01 PW: jinairocc0717</td>
+            <td>ID: koreanair2018 PW: koreanair2017</td>
         </tr>
 
         <tr>
@@ -577,7 +580,7 @@
             <td></td>
             <td>SPAIN</td>
             <td><a href="http://www.ead.eurocontrol.int/publicuser/public/pu/login.do">EAD BASIC</a></td>
-            <td>ID: jinair01 PW: jinairocc0717</td>
+            <td>ID: koreanair2018 PW: koreanair2017</td>
         </tr>
 
         <tr>
@@ -591,14 +594,14 @@
             <td></td>
             <td>SWEDEN</td>
             <td><a href="http://www.ead.eurocontrol.int/publicuser/public/pu/login.do">EAD BASIC</a></td>
-            <td>ID: jinair01 PW: jinairocc0717</td>
+            <td>ID: koreanair2018 PW: koreanair2017</td>
         </tr>
 
         <tr>
             <td></td>
             <td>SWITZERLAND</td>
             <td><a href="http://www.ead.eurocontrol.int/publicuser/public/pu/login.do">EAD BASIC</a></td>
-            <td>ID: jinair01 PW: jinairocc0717</td>
+            <td>ID: koreanair2018 PW: koreanair2017</td>
         </tr>
 
         <tr>
@@ -640,7 +643,7 @@
             <td></td>
             <td>TURKEY</td>
             <td><a href="http://www.ead.eurocontrol.int/publicuser/public/pu/login.do">EAD BASIC</a></td>
-            <td>ID: jinair01 PW: jinairocc0717</td>
+            <td>ID: koreanair2018 PW: koreanair2017</td>
         </tr>
 
         <tr>
@@ -654,7 +657,7 @@
             <td></td>
             <td>U.K</td>
             <td><a href="http://www.ead.eurocontrol.int/publicuser/public/pu/login.do">EAD BASIC</a></td>
-            <td>ID: jinair01 PW: jinairocc0717</td>
+            <td>ID: koreanair2018 PW: koreanair2017</td>
         </tr>
 
 
@@ -673,7 +676,7 @@
             <td></td>
             <td>UKRAINE</td>
             <td><a href="http://www.ead.eurocontrol.int/publicuser/public/pu/login.do">EAD BASIC</a></td>
-            <td>ID: jinair01 PW: jinairocc0717</td>
+            <td>ID: koreanair2018 PW: koreanair2017</td>
         </tr>
 
 
@@ -700,13 +703,18 @@
     </table>
 
     <p>
-        <h5>링크사이트</h5>
+        <h4>링크사이트</h4>
         http://s2.jetplan.com/ ID: jinair.1 PW: FlyJNA2023!!!!
+        <h5>EAD</h5>
+        [JNA] [ID] jinair01 [PW] jinairocc0717<br>
+        [KAL] [ID] koreanair2018 [PW] koreanair2017<br>
+        대한항공 계정이 더 좋음<br>
+        들어가는 법 > AIP LIBRARY > ADVANCED SEARCH 선택 
     </p>
 
     <p>
         <h5>이메일</h5>
-        일본 루트 문의(Air Traffic Management Center)
-        Tel: +81-92-608-8870 (Air Traffic Management Officer)
+        일본 루트 문의(Air Traffic Management Center)<br>
+        Tel: +81-92-608-8870 (Air Traffic Management Officer)<br>
         Mail: cab-atmc-atfm@gxb.mlit.go.jp
     </p>
