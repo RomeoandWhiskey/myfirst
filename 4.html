@@ -1,0 +1,403 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>MY MEMO</title>
+    <meta charset="utf-8">
+    <style>
+        .imgCat {
+            float: left;
+            clear: both;
+            /*float의 지랄맞은 자석기능 없애기*/
+            margin: auto;
+        }
+
+        a {
+            color: rgb(12, 145, 132);
+            text-decoration: none;
+        }
+
+        h1 {
+            font-size: 50px;
+            text-align: center;
+        }
+
+        main {
+            width: 1000px;
+            /*전체 공간 1000픽셀*/
+            margin: 20px auto;
+            /*위 마진 20px 양쪽 마진 auto*/
+        }
+
+        #logo {
+            width: 1000px;
+            margin: 20px auto;
+        }
+
+        #navi {
+            height: 50px;
+            border-bottom: 1px solid #e5e5e5;
+        }
+
+        #navi ul li {
+            list-style: none;
+            float: right;
+            line-height: 50px;
+            vertical-align: middle;
+            /*???*/
+            text-align: center;
+        }
+
+        #navi .menuNavi {
+            text-decoration: none;
+            color: rgb(12, 145, 132);
+            display: block;
+            /*글자영역 전체에 링크적용*/
+            width: 150px;
+            font-size: 15px;
+            font-weight: bold;
+        }
+
+        #navi a:hover,
+        #navi a:focus {
+            color: rgb(145, 72, 145);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+
+        <div id="logo">
+            <img src="cat2.jpg" width="200" class="imgCat">
+            <a href="#">
+                <h1><a href="1.html">JIN</a>MY MEMO</h1>
+            </a>
+            <br>
+        </div>
+
+        <nav id="navi">
+            <ul id="topMenu">
+                <li><a href="2.html" class="menuNavi">AIP</a></li>
+                <li><a href="3.html" class="menuNavi">FLEET LIST</a></li>
+                <li><a href="4.html" class="menuNavi">ETC</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <p>
+            --- CURFEW ---<br>
+            BKI RWY 02/20 CLOSED EVERY TUESDAY 1845-2115Z<br>
+            KCH(WBGG) EV MON BTN 1630-2100 RWY07/25 CLSD FOR MAINT(종료)<br>
+            CEB SUN TUE FRI 1905-2100 RUNWAY CLSD<br>
+            MON WED THU SAT 1900-2100<br>
+            KLO 1700-0100 RWY 05/23 CLSD DUE WIP (종료)<br>
+            CNX(VTCC) 1700Z-2300Z (AIP) LJ017 STA 1450Z<br>
+            FUK 1300Z-2200Z (AIP) / LJ226 1시간 55분 여유<br>
+            HKT 1630Z-0030Z (DEC 15 2022 - OCT 24 2023) / LJ016 1시간 여유<br>
+            MNL 일요일만 연다. 그 외는 1730-1930(IN FLIGHT에서 기장이 요청하면 일단 내리게는 해준다 )<br>
+            CRK 01MAR23 19:00 - 24MAR23 22:00<br>
+            WED 1900-2100,<br>
+            THU 1930-2100 2300-0100,<br>
+            FRI 1930-2200,<br>
+            SAT 1930-2100,<br>
+            MON-TUE 1930-2100 2330-0100<br>
+        </p>
+
+        <p>
+            --- ALTN ---<br>
+            KIX : NGO, NRT, HND, FUK, KKJ<br>
+            NRT : HND, KIX, NGO<br>
+            FUK : KKJ, PUS<br>
+            CTS : HKD, NRT<br>
+            OKA : KOJ, TPE<br>
+            DAD : CXR, HAN<br>
+            HKㅏ BKK : NOTAM LIFTOFF 439입력<br>
+            BKK : DMK, UTP<br>
+            CNX : LPQ, VTE<br>
+            VTE : LPQ, HAN<br>
+            BKI : BWN, KCH<br>
+            DAC : CCU, CGP(VGEG 치타공)<br>
+            CXR : DAD, SGN(VVTS 커퓨없음)<br>
+            TPE : TSA, KHH<br>
+            *777 ALTN PUS 주의<br>
+        </p>
+        <p>
+            --- RTE SUMMARY ---<br>
+            CNX : O/B SADLI, LAMEN 중국 / I/B 중국, ENVAR 대만 ↑ LJ017/018<br>
+            DAD : T/O 35R<br>
+            O/B 대만 ↓ KAPLI / 낮 I/B J01D KAPLI 대만↑<br>
+            / 밤 I/B J01 ENVAR 대만 ↑<br>
+            필리핀 : O/B 대만 ↓ POTIB / 밤 POTIB 대만↑ RUGMA<br>
+            BKK : O/B 대만 ↓ KAPLI / 밤 I/B J01 ENVAR 대만 ↑<br>
+            CXR : N892 주의 (KABAM~MIGUG) FL320 360 400 가능<br>
+            - L625 FL310 350 390 O<br>
+            - 산야 A1 RTE : FL350 360 X<br>
+            필리핀 J10? EDTO? 안하려면 착륙 게런티 있어야함 RPLI, RODN(엔더슨) 군기지 허가 필요<br>
+            POTIB J01R : 1750-2020 그 외, J01<br>
+            RUGMA 1930-2200 AIRAC AIP SUP7_15, HK AIP ENR 1.10<br>
+            TAIWAN AIP ENR 1.8.2<br>
+            ENVAR : 1700-0059 밤에만 열림(HK AIP ENR 1.10.9)<br>
+            KAPLI : 2200-1600 낮에만 열림 J01D<br>
+            근데 밤에 ENVAR 못쓰면 KAPLI-IGURU 조건부로 사용가능(TP 1.8.2)<br>
+        </p>
+        <p>
+            --- STATION마다 주의사항 ---<br>
+            VTE : T/O 31, L/D 13 (공항 북쪽으로만 이착륙 가능, 라오스랑 국경을 마주보고 있어서)<br>
+            CTS : RJCJ NOTAM, T01,T01Z<br>
+            FUK : ICN/FUK FOD 10500/24000,<br>
+            PUS/FUK FL100 250 SIGWX CHART, NO TANKERING<br>
+            CEB : AUTO LAND X, ILS 없음, 연료를 좀 넣어주길 원함 +RA상<br>
+            CXR : N892 주의<br>
+            HKT : OFFSET이 있어서 AUTO LAND X, 737-8MAX로 가기 좋음<br>
+            CRK : RNP APP만 씀(ILS존재하지만)<br>
+            RNP 02 AUTO LAND X<br>
+            T/O JAA > LVP(LOW VIS PERF) X, ALL RWY 400M 적용<br>
+            DAC : O/B ADC NUMBER 받기(방글라데시 ADIZ 통과 넘버)<br>
+            XIY : DOM SOW<br>
+            KLO : VOR이 죽어야 더 좋은 공항<br>
+            RSU : 활주로 가운데 볼록함 6000`<br>
+            PUS : TODC<br>
+            WJU : 28 접근시 GPWS<br>
+            NRT : HAKKA(Y517) 이후 FL330 , 남풍주의(제주도랑 비슷해 산 있어)<br>
+            DAD : RWY35R/17L (RWY35L/17R MIL RWY)<br>
+            이착륙 MAIN 35R<br>
+            DAD공항 이착륙 시, T/W 15KTS 까지 적용<br>
+            TPE : TSA, KHH(RCKH), OKA<br>
+        </p>
+        <p>
+            --- I/B L/S ---<br>
+            CTS/KIX/FUK/OKA,KKJ<br>
+            XIY<br>
+            CNX/CXR/DAC/BKI/KLO/HKT/VTE/TPE<br>
+            DAD, CRK (777은 탑재관리가함)<br>
+            안하는 곳 : BKK, DAD, CRK, GUM, CEB, NRT
+        </p>
+        <p>
+
+            --- CFPL 요청 ---<br>
+            LJXXX CFPL 전달요청 ON XXJAN23<br>
+
+            안녕하십니까<br>
+
+            첨부파일 1~10page 프린트하시어 운항승무원 전달 부탁드립니다.<br><br>
+
+            업무 도움주셔서 감사합니다.<br>
+            운항통제실 정라원 드림
+        </p>
+        <p>
+            --- PLD 요청 ---<br>
+            LJXXX XXJAN23 예상 PAYLOAD 요청<br>
+
+            안녕하십니까.<br>
+
+            금일 LJXXX편 예상 PLD 송부 요청드립니다.<br>
+            업무 협조에 감사드립니다.<br>
+
+            통제팀 정라원 드림<br>
+
+            REQUEST OF CARGO LJXXX/XXJAN(LOCAL)<br>
+
+            HELLO,<br>
+            PLZ SEND US CARGO INFORMATION OF LJ060/16JAN.THANK YOU.<br>
+            -JINAIR OCC-
+        </p>
+        <p>
+
+            --- NOTAM ---<br>
+            RKRR RJJJ KZAK<br>
+            RCAA VHHK ZJSA<br>
+            RPHI VVHM VVHN<br>
+            VTBB VLVT WBFC<br>
+            ZSHA ZGZU ZPKM VYYF VECF VGFR
+        </p>
+
+        <p>
+            --- JPP ---<br>
+            -기존 Default CCF : Minimum CCF + Flap Maneuvering Fuel<br>
+            -변경 Default CCF : Minimum CCF (B737 200LBS, B777 500LBS)
+        </p>
+        <p>
+            ---- 항공기 ----(FOM 4.1.5)<br>
+            ICAO PANS OPS<br>
+            B737, MAX 777 CATEGORY C<br>
+            B737-900 CATEGORY D<br>
+            PUS 777 15KT적용가능
+        </p>
+        <p>
+            ---- 영공통과 ----<br>
+            베트남 : 지점<br>
+            대만 : AFTN<br>
+            캄보디아 : 메일<br>
+            라오스 : 메일
+        </p>
+        <p>
+            Revalidated Clearance 가 요구되는 경우<br>
+            • 국내선 : 연결편의 지연으로 시간표 상 (STD) 또는 계획된 출발
+            시각 (ETD) 으로부터 1 시간이상 지연될 때<br>
+            • 국제선 : 연결편의 지연으로 시간표상 (STD) 또는 계획된 출발시
+            각 (ETD) 으로부터 6 시간이상 지연될 때<br>
+            • 어떠한 이유로 인해 Gate 로 돌아왔을 때
+        </p>
+        <p>
+            (CHG-JNAXXX-RKSI2300-RKPC-DOF/230131-13/RKSS0030-18/DOF/230201)
+        </p>
+        <p>
+            Final Reserve Fuel x 1.3 (130 %) = Minimum Fuel(FOM 8.2.2)
+        </p>
+        <p>
+
+            POM(737 4. 1. 12)<br>
+            Main tanks 1 and 2 must be full if center tank contains more than 1000 lbs
+            * 지상에서 정비사가 CENTER꺼를 MAIN으로 FIDDING해서 옮길수 있다(== 근데 잘 안된다)
+            * 이륙하면 중력에 의해서 알아서 CENTER꺼가 MAIN으로 이동한다<br>
+
+            POM(777 POM 4.1.8)--> jettison pump 부작동 고려<br>
+            The center tank may contain up to 3,000 pounds of fuel with
+            less than full main tanks provided center tank fuel weight plus
+            actual zero fuel weight does not exceed the maximum zero
+            fuel weight, and center of gravity limits are observed.<br>
+
+            연료가 3000LBS 차있으면 연료로 보지 않고
+            WEIGHT로 봐서 ZFW에 더해준다
+
+            (FOM 6.1.27)<br>
+            ○ Maximum Allowable Overfill
+            비행 계획 승인은 탑재된 연료가 아래와 같을 경우 유효하다 .
+            • 계획된 연료 , Ramp out Fuel 또는 비행계획서의 예상 탑재 연료에
+            허용 가능한 과보급량을 더한 연료량을 초과하지 않아야 한다 .
+            • 허용 가능한 과보급량
+            - B737 : 1,000 LBS
+            - B777 : 1,500 LB
+        </p>
+
+        <p>
+            ------------- FUEL TANK CAPACITY<br>
+            737<br>
+            메인 8,630 + 8,630 = 17,260<br>
+            센터 28,803<br>
+            TTL 46,063(여름철에 비중생각하면 보통 45000)
+
+            777<br>
+            메인 64,100 + 64,100 = 128,200<br>
+            센터 174,900<br>
+            TTL 303,100
+
+            <br>
+            국내 공역 정보과 053-668-0259
+            항공 교통 조정과 053-668-0446
+        </p>
+        <p>
+            ------------- EDTO<br>
+            LAO 비상공항 RPLI 사용 불가<br>
+            Emergency landing outside of the operating hours of the Laoag International Airport,
+            i.e., 10am to 10pm, cannot be made(02Z~14Z)<br>
+            RORS 사용 불가<br>
+            ENR ALT TPE CEB<br>
+            CURFEW : E) TWR TEMPO HR OF OPS: 0200-1400.
+        </p>
+        <p>
+            1. 승객의 자발적 하기 : 환자 승객 및 기타 모든 사유로 승객 탑승후 하기 (FB)
+            2. 수하물 하기 : NO-SHOW 승객 수하물 하기로 인한 지연 (PN)
+            3. 버스 도착 지연 : 버스 지연 도착에 따른 지연 (AF , AM)
+            4. 항공기내 착석 지연 : 보딩 완료 후, 승객 착석 지연에 따른 지연 (FA)
+            5. 보딩 사인 : 승무원 보딩 사인 지연 (FA)
+            6. 연결지연 : FB로 인한 항공기 연결지연 NS
+            7. RAMP RTN : 정비 사유로 인한 RAMP RTN (TR)
+            정비 사유 외 이유로 인한 RAMP RTN
+            -환자승객 하기 (FB)
+            -목적지 / 출발지 공항 기상 (W CODE)
+        </p>
+        <p>
+            FL250 제한시 ROUTE
+            VVDN BUNT1G BUNTA A1 IKELA..MORTU..NOBAD..KAPLI G86 ANDRE A577 TNN W4 APU B576 ATOTI Y722 OLMEN RKSI
+            호치민 : A1(~BUNTA) FL260//460
+            산야 : A1(BUNTA~IKELA) FL140 ~ ABOVE
+            대만 : G86(KAPLI~ANDRE) 6000FT//UNL
+            대만 : A577(ANDRE~TNN) 8000//UNL
+            대만 : W4(TNN~APU) 5000//UNL
+            대만 : B576(APU~ATOTI) 8000FT//UNL CJU~OLMEN FL130
+            한국 : Y722 FL140//UNL
+        </p>
+        <p>
+            DAD/PUS J01D
+            -BUNT1G BUNTA A1 IKELA..MORTU..NOBAD..KAPLI G86 ANDRE A577 TNN W4 ANLOT B1 APU..DRAKE Q11 WP900 L4 LIPLO
+            Y741
+            ATOTI Y722 SOSDO Y571 ANROD
+
+            B1 : FL270//UNL
+            Q11 : F290//UNL
+            대만 A1(BULAN~ELATO) : 15000FT//UNL
+
+            한국
+            Class A FL200ㅇ ~ ●600
+            Class B 공항 ~ 만피트
+            Class C 작은 공항 ~5000 피트
+            Class D FL200이하 모든 항로
+            CLASS E 1000 ~ FL600
+            CLASS G 5500FT 미만
+
+            VTE N01 TAMMOT-KAPLI 주의!! 안됨
+            차라리 TAMMOT - ELATO 가자
+
+
+            LDA : RCSS 절차 OFFSET LOCALIZER
+            LOC APP/LDA APP : ILS 와 동일하다 .
+            FOM 6.7.26
+            FOM 6.7.27
+        </p>
+        <p>
+            ---------------RNP<br>
+            RNP AR 인가
+            항공기 : 7757 아래로
+            공항 : USN, KPO, KKJ, HKG, MFM, BKI, GUM
+        </p>
+        <p>
+            ------------- 제방빙<br>
+            제방빙 불가 공항 : HIN,KPO,KUV,RSU,WJU
+        </p>
+        <p>
+
+            -------------COBT<br>
+
+            아래 K-ATFM PORTAL(https://katfm.molit.go.kr/main.do)에서
+
+            ID : ybkim01 // PW : Jinair02!
+        </p>
+        <p>
+            * PAPI : 시계착륙에 쓰임
+            ILS 고장시 유용함
+        </p>
+        <p>
+            ENG GENERATOR
+            SOURCE OFF LIGHT ==> 전기가 끊겼다<br>
+
+            777은 APU나가도 아무 상관없다
+            1 ENG으로도 전기나갔을때 잘만 감
+        </p>
+        <p>
+            ----------정비 위탁하는곳<br>
+            BKK, HKT, DAD(777)
+        </p>
+        <p>
+            -------------------CXR<br>
+            Q15항로(ICN/CXR) : 국내선 용
+            G221(CXR/ICN) : 베트남 AIC A08/17에 안된다고 적혀있음
+            Q1 : 290미만은 북,남 다 가능
+            290이상은 southbound만 됨
+
+            CALIBRATE : 드론으로 ILS TEST하는 것
+        </p>
+        <p>
+            --------------GUM IRS<br>
+            GUM가는데 만약 IRS가 하나 안되
+            갈수 있음
+            KZAK G339는 FIX O WAYPOINT X NON-RNP
+            FL290으로 운항 가능 MEA FL140 (FAA AIP ENR 7.4.2. Oakland(KZAK) Oceanic Airspace)
+            미국 AIP : G339 PACIFIC ROUTE로 구분
+        </p>
+    </main>
+</body>
+
+</html>

@@ -2,48 +2,75 @@
 <html>
 
 <head>
-    <title>JIN start day</title>
+    <title>AIP LIST</title>
     <meta charset="utf-8">
     <style>
-        .imgCat{
-            float:left;
-            clear:both; /*float의 지랄맞은 자석기능 없애기*/
-            margin:auto;
+        .imgCat {
+            float: left;
+            clear: both;
+            /*float의 지랄맞은 자석기능 없애기*/
+            margin: auto;
         }
-        a{
-            color:rgb(12, 145, 132);
+
+        a {
+            color: rgb(12, 145, 132);
             text-decoration: none;
         }
-        h1{
-            font-size:50px;
-            text-align:center;
+
+        h1 {
+            font-size: 50px;
+            text-align: center;
         }
-        body{
-            width: 1000px; /*전체 공간 1000픽셀*/
-            margin:20px auto; /*위 마진 20px 양쪽 마진 auto*/
+
+        main {
+            width: 1000px;
+            /*전체 공간 1000픽셀*/
+            margin: 20px auto;
+            /*위 마진 20px 양쪽 마진 auto*/
         }
-        #navi{
-            height:50px;
+
+        #logo{
             width:1000px;
-            background-color: black;
+            margin: 20px auto;
         }
-        #navi ul li{
-            list-style:none;
-            float:right;
-            line-height: 50px;          
-            vertical-align: middle; /*???*/    
-            text-align: center; 
+
+        #navi {
+            height: 50px;
+            border-bottom: 1px solid #e5e5e5;
         }
-        #navi .menuNavi{
-            text-decoration:none;                    
-            color:rgb(12, 145, 132);                             
-            display: block;     /*글자영역 전체에 링크적용*/                      
-            width: 150px;                             
-            font-size: 15px;                          
-            font-weight: bold;                       
+
+        #navi ul li {
+            list-style: none;
+            float: right;
+            line-height: 50px;
+            vertical-align: middle;
+            /*???*/
+            text-align: center;
+
         }
-        #navi a:hover, #navi a:focus{
-            color:rgb(145, 72, 145);
+
+        #navi .menuNavi {
+            text-decoration: none;
+            color: rgb(12, 145, 132);
+            display: block;
+            /*글자영역 전체에 링크적용*/
+            width: 150px;
+            font-size: 15px;
+            font-weight: bold;
+        }
+
+        #navi a:hover,
+        #navi a:focus {
+            color: rgb(145, 72, 145);
+        }
+
+        table {
+            border-collapse: collapse;
+            margin:10px;
+            text-align: center;
+        }
+        td, th{
+            padding:3px;
         }
     </style>
 </head>
@@ -51,670 +78,696 @@
 <body>
     <header>
         <div id="logo">
-        <img src="cat2.jpg" width="200" class="imgCat">
-        <a href="#"><h1><a href="1.html">JIN</a> AIP LIST</h1></a>
-        <br>
+            <img src="cat2.jpg" width="200" class="imgCat">
+            <a href="#">
+                <h1><a href="1.html">JIN</a> AIP LIST</h1>
+            </a>
+            <br>
         </div>
 
         <nav id="navi">
             <ul id="topMenu">
                 <li><a href="2.html" class="menuNavi">AIP</a></li>
                 <li><a href="3.html" class="menuNavi">FLEET LIST</a></li>
+                <li><a href="4.html" class="menuNavi">ETC</a></li>
             </ul>
         </nav>
     </header>
 
 
-    <h4>AIP</h4>
-    <table border="1">
-        <th>WEBSITE LINK</th>
-        <th>내용</th>
-        <tr>
-            <td><a href="https://www.eurocontrol.int/" target="_blank">EURO CONTROL</a></td>
-            <td>전세계 AIP 관련 사이트 모음</td>
-        </tr>
-        <tr>
-            <td><a href="https://www.faa.gov/international_affairs" target="_blank">FAA WORLD WIDE</a></td>
-            <td>전세계 항공기관 DB모음</td>
-        </tr>
-    </table>
-    <br>
-
-    <table border="1">
-        <th>목록</th>
-        <th>열람국가</th>
-        <th>LINK</th>
-        <th>ID/PW</th>
-        <tr>
-            <td></td>
-            <td>ARMENIA </td>
-            <td><a href="https://www.ead.eurocontrol.int/cms-eadbasic/opencms/en/login/ead-basic/" target="_blank">EAD BASIC</a></td>
-            <td>ID: koreanair2018 PW: koreanair2017</td>
-        </tr>
-        <tr>
-            <td></td>
-            <td>AUSTRALIA </td>
-            <td><a href="http://www.airservicesaustralia.com/aip/aip.asp" target="_blank">AUSTRALIA AIP</a></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>3</td>
-            <td>AUSTRIA </td>
-            <td><a href="https://www.ead.eurocontrol.int/cms-eadbasic/opencms/en/login/ead-basic/" target="_blank">EAD BASIC</a></td>
-            <td>ID: koreanair2018 PW: koreanair2017</td>
-        </tr>
-        <tr>
-            <td>4</td>
-            <td>AZERBAIJAN </td>
-            <td><a href="https://www.ead.eurocontrol.int/cms-eadbasic/opencms/en/login/ead-basic/" target="_blank">EAD BASIC</a></td>
-            <td>ID: koreanair2018 PW: koreanair2017</td>
-        </tr>
-        <tr>
-            <td>5</td>
-            <td>BAHRAIN </td>
-            <td><a href="https://www.ead.eurocontrol.int/cms-eadbasic/opencms/en/login/ead-basic/" target="_blank">BAHRAIN AIP</a></td>
-            <td>ID: koreanair2018 PW: koreanair2017</td>
-        </tr>
-        <tr>
-            <td>6</td>
-            <td>BALGLADESH</td>
-            <td>책자</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>7</td>
-            <td>BELARUS</td>
-            <td><a href="https://www.ead.eurocontrol.int/cms-eadbasic/opencms/en/login/ead-basic/" target="_blank">EAD BASIC</a></td>
-            <td>ID: koreanair2018 PW: koreanair2017</td>
-        </tr>
-        <tr>
-            <td>8</td>
-            <td>BELGIUM</td>
-            <td><a href="https://www.ead.eurocontrol.int/cms-eadbasic/opencms/en/login/ead-basic/" target="_blank">EAD BASIC</a></td>
-            <td>ID: koreanair2018 PW: koreanair2017</td>
-        </tr>
-        <tr>
-            <td>9</td>
-            <td>BOLIVIA</td>
-            <td>책자</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>10</td>
-            <td>BRAZIL </td>
-            <td>책자</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>11</td>
-            <td>BRUNEI</td>
-            <td><a
-                    href="https://www.dca.gov.bn/Site%20Pages/Information%20TAB/AIP%20Supplements/Aeronautical%20Information%20Publications%20Supplements.aspx" target="_blank">DCA
-                    website</a></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>12</td>
-            <td>BULGARIA</td>
-            <td><a href="https://www.ead.eurocontrol.int/cms-eadbasic/opencms/en/login/ead-basic/" target="_blank">EAD BASIC</a></td>
-            <td>ID: koreanair2018 PW: koreanair2017</td>
-        </tr>
-        <tr>
-            <td>13</td>
-            <td>CAMBODIA</td>
-            <td>책자</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>14</td>
-            <td>CANADA</td>
-            <td><a
-                    href="https://tc.canada.ca/en/aviation/publications/transport-canada-aeronautical-information-manual-tc-aim-tp-14371" target="_blank">Canada
-                    AIP</a></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>15</td>
-            <td>CHILE</td>
-            <td>책자</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>16</td>
-            <td>CHINA</td>
-            <td><a href="http://www.aipchina.org/" target="_blank">CHINA AIP</a></td>
-            <td>ID: eaipjinair01 PW: jinair04</td>
-        </tr>
-        <tr>
-            <td>17</td>
-            <td>COLOMBIA</td>
-            <td><a href="https://www.aerocivil.gov.co/" target="_blank">COLOMBIA AIP</a></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td></td>
-            <td>HONDURAS</td>
-            <td>Central American AIP</td>
-            <td></td>
-        </tr>
-
-        <tr>
-            <td></td>
-            <td>HONGHKONG</td>
-            <td><a href="https://www.ais.gov.hk/" target="_blank">HONG KONG AIP</a></td>
-            <td>free access</td>
-        </tr>
-
-        <tr>
-            <td></td>
-            <td>HUNGARY</td>
-            <td><a href="http://www.ead.eurocontrol.int/publicuser/public/pu/login.do" target="_blank">EAD BASIC</a></td>
-            <td>ID: koreanair2018 PW: koreanair2017</td>
-        </tr>
-
-        <tr>
-            <td></td>
-            <td>ICELAND</td>
-            <td><a href="http://www.ead.eurocontrol.int/publicuser/public/pu/login.do" target="_blank">EAD BASIC</a></td>
-            <td>ID: koreanair2018 PW: koreanair2017</td>
-        </tr>
-
-        <tr>
-            <td></td>
-            <td>INDIA</td>
-            <td><a href="https://aim-india.aai.aero/eaip/" target="_blank">INDIA AIP</a></td>
-            <td>free access</td>
-        </tr>
-
-        <tr>
-            <td></td>
-            <td>INDONESIA</td>
-            <td><a href="http://aimindonesia.info/" target="_blank">INDONESIA AIP</a></td>
-            <td>ID: sungjin.kim@koreanair.com PW: 123456 (무료가입가능)</td>
-        </tr>
-
-
-        <tr>
-            <td></td>
-            <td>IRAN</td>
-            <td></td>
-            <td></td>
-        </tr>
-
-        <tr>
-            <td></td>
-            <td>IRAQ</td>
-            <td><a href="http://www.iraqcaa.com/menu/aip.html" target="_blank">AIP Iraq</a></td>
-            <td>free access</td>
-        </tr>
-
-        <tr>
-            <td></td>
-            <td>IRELAND</td>
-            <td><a href="http://www.ead.eurocontrol.int/publicuser/public/pu/login.do" target="_blank">EAD BASIC</a></td>
-            <td>ID: koreanair2018 PW: koreanair2017</td>
-        </tr>
-
-        <tr>
-            <td></td>
-            <td>ISRAEL</td>
-            <td><a href="https://www.gov.il/en/departments/general/electronic-aip" target="_blank">ISRAEL AIP</a></td>
-            <td>free access</td>
-        </tr>
-
-
-        <tr>
-            <td></td>
-            <td>ITALY</td>
-            <td><a href="http://www.ead.eurocontrol.int/publicuser/public/pu/login.do" target="_blank">EAD BASIC</a></td>
-            <td>ID: koreanair2018 PW: koreanair2017</td>
-        </tr>
-
-        <tr>
-            <td></td>
-            <td>JAPAN</td>
-            <td><a href="https://aisjapan.mlit.go.jp/Login.do" target="_blank">JAPAN AIP</a></td>
-            <td>ID : twonkim / PW : rlaxo1</td>
-        </tr>
-
-        <tr>
-            <td></td>
-            <td>JORDAN</td>
-            <td><a href="http://www.ead.eurocontrol.int/publicuser/public/pu/login.do" target="_blank">EAD BASIC</a></td>
-            <td>ID: koreanair2018 PW: koreanair2017</td>
-        </tr>
-
-
-        <tr>
-            <td></td>
-            <td>KAZAKHSTAN</td>
-            <td><a href="http://www.ead.eurocontrol.int/publicuser/public/pu/login.do" target="_blank">EAD BASIC</a></td>
-            <td>ID: koreanair2018 PW: koreanair2017</td>
-        </tr>
-
-        <tr>
-            <td></td>
-            <td>KENYA</td>
-            <td>책자</td>
-            <td></td>
-        </tr>
-
-        <tr>
-            <td></td>
-            <td>KOREA</td>
-            <td><a href="http://ais.casa.go.kr/" target="_blank">KOREA AIP</a></td>
-            <td></td>
-        </tr>
-
-        <tr>
-            <td></td>
-            <td>KUWAIT</td>
-            <td><a href="https://dgca.gov.kw/AIP" target="_blank">KUWAIT AIP</a></td>
-            <td></td>
-        </tr>
-
-        <tr>
-            <td></td>
-            <td>KYRGYZSTAN</td>
-            <td><a href="http://www.kanservice.com/aip-aic.html" target="_blank">AIP,AIC</a></td>
-            <td></td>
-        </tr>
-
-        <tr>
-            <td></td>
-            <td>LAOS</td>
-            <td>책자</td>
-            <td></td>
-        </tr>
-
-        <tr>
-            <td></td>
-            <td>LATVIA</td>
-            <td><a href="http://www.ead.eurocontrol.int/publicuser/public/pu/login.do" target="_blank">EAD BASIC</a></td>
-            <td>ID: koreanair2018 PW: koreanair2017</td>
-        </tr>
-
-        <tr>
-            <td></td>
-            <td>LITHUANIA</td>
-            <td><a href="http://www.ead.eurocontrol.int/publicuser/public/pu/login.do" target="_blank">EAD BASIC</a></td>
-            <td>ID: koreanair2018 PW: koreanair2017</td>
-        </tr>
-
-        <tr>
-            <td></td>
-            <td>LUXEMBOURG</td>
-            <td><a href="http://www.ead.eurocontrol.int/publicuser/public/pu/login.do" target="_blank">EAD BASIC</a></td>
-            <td>ID: koreanair2018 PW: koreanair2017</td>
-        </tr>
-
-
-        <tr>
-            <td></td>
-            <td>MACAU</td>
-            <td><a href="http://www.aacm.gov.mo/english/aeronautical.php" target="_blank">Aeronautical Information Publication</a></td>
-            <td></td>
-        </tr>
-
-        <tr>
-            <td></td>
-            <td>MALAYSIA</td>
-            <td><a href="https://aip.caam.gov.my/aip/eAIP/history-en-MS.html" target="_blank">AIP Malaysia</a></td>
-            <td></td>
-        </tr>
-
-
-        <tr>
-            <td></td>
-            <td>MALDIVES</td>
-            <td><a href="http://www.aviainfo.gov.mv/publications/aip.php" target="_blank">MALDIVES AIP</a></td>
-            <td></td>
-        </tr>
-
-        <tr>
-            <td></td>
-            <td>MALTA</td>
-            <td><a href="http://www.ead.eurocontrol.int/publicuser/public/pu/login.do" target="_blank">EAD BASIC</a></td>
-            <td>ID: koreanair2018 PW: koreanair2017</td>
-        </tr>
-
-        <tr>
-            <td></td>
-            <td>MARSHALL IS.</td>
-            <td>[공항 일반 TEXT정보]<br>
-                https://nfdc.faa.gov/xwiki/bin/view/NFDC/Airport+Data<br>
-                [공항 CHART 정보] http://aeronav.faa.gov/index.asp?xml=aeronav/applications/d_tpp</td>
-            <td>ID: jinair01 PW: jinairocc0717</td>
-        </tr>
-
-        <tr>
-            <td></td>
-            <td>MEXICO</td>
-            <td>책자</td>
-            <td></td>
-        </tr>
-
-        <tr>
-            <td></td>
-            <td>MOLDOVA</td>
-            <td><a href="http://www.ead.eurocontrol.int/publicuser/public/pu/login.do">EAD BASIC</a></td>
-            <td>ID: koreanair2018 PW: koreanair2017</td>
-        </tr>
-
-        <tr>
-            <td></td>
-            <td>MOMGOLIA</td>
-            <td><a href="https://www.ais.mn/aipAip">MONGOLIA AIP</a></td>
-            <td>ID : chrhyoo / PW : chrhyoo21</td>
-        </tr>
-
-        <tr>
-            <td></td>
-            <td>MYANMAR</td>
-            <td><a href="https://www.ais.gov.mm/eAIP/2021-01-01/html/index-en-GB.html">MYANMAR AIP</a></td>
-            <td>fress access</td>
-        </tr>
-
-        <tr>
-            <td></td>
-            <td>NAURU</td>
-            <td></td>
-            <td></td>
-        </tr>
-
-        <tr>
-            <td></td>
-            <td>NEPAL</td>
-            <td><a href="https://e-aip.caanepal.gov.np/welcome/listall/1">NEPAL AIP</a></td>
-            <td>free access</td>
-        </tr>
-
-        <tr>
-            <td></td>
-            <td>NETHERLANDS</td>
-            <td><a href="http://www.ead.eurocontrol.int/publicuser/public/pu/login.do">EAD BASIC</a></td>
-            <td>ID: koreanair2018 PW: koreanair2017</td>
-        </tr>
-
-        <tr>
-            <td></td>
-            <td>NEW CALEDONIA</td>
-            <td><a href="https://www.sia.aviation-civile.gouv.fr/?___store=english">FRANCE AIP(포함됨)</a></td>
-            <td>프랑스 AIP WEB에서 열람가능</td>
-        </tr>
-
-        <tr>
-            <td></td>
-            <td>NEW ZEALAND</td>
-            <td><a href="http://www.aip.net.nz/">NEW ZEALAND AIP</a></td>
-            <td></td>
-        </tr>
-
-        <tr>
-            <td></td>
-            <td>NORWAY</td>
-            <td><a href="http://www.ead.eurocontrol.int/publicuser/public/pu/login.do">EAD BASIC</a></td>
-            <td>ID: koreanair2018 PW: koreanair2017</td>
-        </tr>
-
-        <tr>
-            <td></td>
-            <td>OMAN</td>
-            <td></td>
-            <td></td>
-        </tr>
-
-        <tr>
-            <td></td>
-            <td>PAKISTAN</td>
-            <td><a href="http://www.caapakistan.com.pk/aeronauticalinfoview.aspx">PAKISTAN AIP</a></td>
-            <td>ID: jinair01 PW: jinairocc0717</td>
-        </tr>
-
-        <tr>
-            <td></td>
-            <td>PALAU</td>
-            <td>[공항 일반 TEXT정보]<br>
-                https://nfdc.faa.gov/xwiki/bin/view/NFDC/Airport+Data<br>
-                [공항 CHART 정보] http://aeronav.faa.gov/index.asp?xml=aeronav/applications/d_tpp</td>
-            <td>ID: jinair01 PW: jinairocc0717</td>
-        </tr>
-
-        <tr>
-            <td></td>
-            <td>PARAGUAY</td>
-            <td>CD</td>
-            <td></td>
-        </tr>
-
-        <tr>
-            <td></td>
-            <td>PERU</td>
-            <td>책자</td>
-            <td></td>
-        </tr>
-
-        <tr>
-            <td></td>
-            <td>PHILIPPINES</td>
-            <td><a href="http://www.ead.eurocontrol.int/publicuser/public/pu/login.do">EAD BASIC</a></td>
-            <td>ID: koreanair2018 PW: koreanair2017</td>
-        </tr>
-
-        <tr>
-            <td></td>
-            <td>PHILIPPINES</td>
-            <td><a href="http://ats.caap.gov.ph/">PHILIPINES AIP</a></td>
-            <td>ID:LJ PW: FlyJNA<br>
-                Station: AIP SUBSCRIBER<br>
-                Company Name: JINAIR - REPUBLIC OF KOREA<br>
-                유선 연락처: (632)-944-2264~6(Aeronautical Information)</td>
-        </tr>
-
-        <tr>
-            <td></td>
-            <td>POLAND</td>
-            <td><a href="http://www.ead.eurocontrol.int/publicuser/public/pu/login.do">EAD BASIC</a></td>
-            <td>ID: koreanair2018 PW: koreanair2017</td>
-        </tr>
-
-        <tr>
-            <td></td>
-            <td>PORTUGAL</td>
-            <td><a href="http://www.ead.eurocontrol.int/publicuser/public/pu/login.do">EAD BASIC</a></td>
-            <td>ID: koreanair2018 PW: koreanair2017</td>
-        </tr>
-
-        <tr>
-            <td></td>
-            <td>ROMANIA</td>
-            <td><a href="http://www.ead.eurocontrol.int/publicuser/public/pu/login.do">EAD BASIC</a></td>
-            <td>ID: koreanair2018 PW: koreanair2017</td>
-        </tr>
-
-        <tr>
-            <td></td>
-            <td>RUSSIA</td>
-            <td><a href="http://www.caiga.ru/products/">AIP AMDT, AIC</a></td>
-            <td></td>
-        </tr>
-
-        <tr>
-            <td></td>
-            <td>SAUDI ARABIA</td>
-            <td>CD</td>
-            <td></td>
-        </tr>
-
-        <tr>
-            <td></td>
-            <td>SINGAPORE</td>
-            <td><a
-                    href="https://www.caas.gov.sg/legislation-regulations/guidelines-advisory/air-navigation-services/aeronautical-information-publication-amendments">SINGAPORE
-                    AIP</a></td>
-            <td></td>
-        </tr>
-
-        <tr>
-            <td></td>
-            <td>SLOVAKIA</td>
-            <td><a href="http://www.ead.eurocontrol.int/publicuser/public/pu/login.do">EAD BASIC</a></td>
-            <td>ID: koreanair2018 PW: koreanair2017</td>
-        </tr>
-
-        <tr>
-            <td></td>
-            <td>SLOVENIA</td>
-            <td><a href="http://www.ead.eurocontrol.int/publicuser/public/pu/login.do">EAD BASIC</a></td>
-            <td>ID: koreanair2018 PW: koreanair2017</td>
-        </tr>
-
-        <tr>
-            <td></td>
-            <td>SOLOMON IS.</td>
-            <td>책자</td>
-            <td></td>
-        </tr>
-
-        <tr>
-            <td></td>
-            <td>SPAIN</td>
-            <td><a href="http://www.ead.eurocontrol.int/publicuser/public/pu/login.do">EAD BASIC</a></td>
-            <td>ID: koreanair2018 PW: koreanair2017</td>
-        </tr>
-
-        <tr>
-            <td></td>
-            <td>SRILANKA</td>
-            <td><a href="https://www.airport.lk/aasl/AIS/web.Home.htm">SRILANKA AIP</a></td>
-            <td></td>
-        </tr>
-
-        <tr>
-            <td></td>
-            <td>SWEDEN</td>
-            <td><a href="http://www.ead.eurocontrol.int/publicuser/public/pu/login.do">EAD BASIC</a></td>
-            <td>ID: koreanair2018 PW: koreanair2017</td>
-        </tr>
-
-        <tr>
-            <td></td>
-            <td>SWITZERLAND</td>
-            <td><a href="http://www.ead.eurocontrol.int/publicuser/public/pu/login.do">EAD BASIC</a></td>
-            <td>ID: koreanair2018 PW: koreanair2017</td>
-        </tr>
-
-        <tr>
-            <td></td>
-            <td>TAIWAN</td>
-            <td><a href="https://ais.caa.gov.tw/eaip/">eAIP Taiwan</a></td>
-            <td></td>
-        </tr>
-
-        <tr>
-            <td></td>
-            <td>TAJIKISTAN</td>
-            <td>CD</td>
-            <td></td>
-        </tr>
-
-        <tr>
-            <td></td>
-            <td>TANZANIA</td>
-            <td>책자</td>
-            <td></td>
-        </tr>
-
-        <tr>
-            <td></td>
-            <td>THAILAND</td>
-            <td><a href="https://ais.caat.or.th/">THAILAND AIP</a></td>
-            <td></td>
-        </tr>
-
-        <tr>
-            <td></td>
-            <td>TRUKEMENISTAN</td>
-            <td>CD</td>
-            <td></td>
-        </tr>
-
-        <tr>
-            <td></td>
-            <td>TURKEY</td>
-            <td><a href="http://www.ead.eurocontrol.int/publicuser/public/pu/login.do">EAD BASIC</a></td>
-            <td>ID: koreanair2018 PW: koreanair2017</td>
-        </tr>
-
-        <tr>
-            <td></td>
-            <td>U.A.E</td>
-            <td>CD</td>
-            <td></td>
-        </tr>
-
-        <tr>
-            <td></td>
-            <td>U.K</td>
-            <td><a href="http://www.ead.eurocontrol.int/publicuser/public/pu/login.do">EAD BASIC</a></td>
-            <td>ID: koreanair2018 PW: koreanair2017</td>
-        </tr>
-
-
-        <tr>
-            <td></td>
-            <td>U.S.A</td>
-            <td>[미국 AIP] <br>
-                http://www.faa.gov/air_traffic/publications/<br>
-                [공항 일반 TEXT정보] <br>
-                https://nfdc.faa.gov/xwiki/bin/view/NFDC/Airport+Data<br>
-                [공항 CHART 정보] http://aeronav.faa.gov/index.asp?xml=aeronav/applications/d_tpp</a></td>
-            <td>ID: jinair01 PW: jinairocc0717</td>
-        </tr>
-
-        <tr>
-            <td></td>
-            <td>UKRAINE</td>
-            <td><a href="http://www.ead.eurocontrol.int/publicuser/public/pu/login.do">EAD BASIC</a></td>
-            <td>ID: koreanair2018 PW: koreanair2017</td>
-        </tr>
-
-
-        <tr>
-            <td></td>
-            <td>UZBEKISTAN</td>
-            <td><a href="https://ais.uzairways.com/aip/main.htm">UZBEKISTAN AIP</a></td>
-            <td></td>
-        </tr>
-
-        <tr>
-            <td></td>
-            <td>VANUATU</td>
-            <td><a href="https://vli.vu/PILOTS___AIRCRAFT_OPERATORS.htm">VANUATU AIP</a></td>
-            <td></td>
-        </tr>
-
-        <tr>
-            <td></td>
-            <td>VIETNAM</td>
-            <td><a href="http://vnaic.vn/index.php?lang=en">VIETNAM AIP</a></td>
-            <td>ID:jinair PW: vnaic2013</td>
-        </tr>
-    </table>
-
-    <p>
+    <main>
+        <h4>AIP</h4>
+        <table border="1">
+            <th>WEBSITE LINK</th>
+            <th>내용</th>
+            <tr>
+                <td><a href="https://www.eurocontrol.int/" target="_blank">EURO CONTROL</a></td>
+                <td>전세계 AIP 관련 사이트 모음</td>
+            </tr>
+            <tr>
+                <td><a href="https://www.faa.gov/international_affairs" target="_blank">FAA WORLD WIDE</a></td>
+                <td>전세계 항공기관 DB모음</td>
+            </tr>
+        </table>
+        <br>
+
+        <table border="1">
+            <th>목록</th>
+            <th>열람국가</th>
+            <th>LINK</th>
+            <th>ID/PW</th>
+            <tr>
+                <td>1</td>
+                <td>ARMENIA </td>
+                <td><a href="https://www.ead.eurocontrol.int/cms-eadbasic/opencms/en/login/ead-basic/"
+                        target="_blank">EAD BASIC</a></td>
+                <td>ID: koreanair2018 PW: koreanair2017</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>AUSTRALIA </td>
+                <td><a href="http://www.airservicesaustralia.com/aip/aip.asp" target="_blank">AUSTRALIA AIP</a></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>AUSTRIA </td>
+                <td><a href="https://www.ead.eurocontrol.int/cms-eadbasic/opencms/en/login/ead-basic/"
+                        target="_blank">EAD BASIC</a></td>
+                <td>ID: koreanair2018 PW: koreanair2017</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>AZERBAIJAN </td>
+                <td><a href="https://www.ead.eurocontrol.int/cms-eadbasic/opencms/en/login/ead-basic/"
+                        target="_blank">EAD BASIC</a></td>
+                <td>ID: koreanair2018 PW: koreanair2017</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>BAHRAIN </td>
+                <td><a href="https://www.ead.eurocontrol.int/cms-eadbasic/opencms/en/login/ead-basic/"
+                        target="_blank">BAHRAIN AIP</a></td>
+                <td>ID: koreanair2018 PW: koreanair2017</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>BALGLADESH</td>
+                <td>책자</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>BELARUS</td>
+                <td><a href="https://www.ead.eurocontrol.int/cms-eadbasic/opencms/en/login/ead-basic/"
+                        target="_blank">EAD BASIC</a></td>
+                <td>ID: koreanair2018 PW: koreanair2017</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>BELGIUM</td>
+                <td><a href="https://www.ead.eurocontrol.int/cms-eadbasic/opencms/en/login/ead-basic/"
+                        target="_blank">EAD BASIC</a></td>
+                <td>ID: koreanair2018 PW: koreanair2017</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>BOLIVIA</td>
+                <td>책자</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>BRAZIL </td>
+                <td>책자</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>11</td>
+                <td>BRUNEI</td>
+                <td><a href="https://www.dca.gov.bn/Site%20Pages/Information%20TAB/AIP%20Supplements/Aeronautical%20Information%20Publications%20Supplements.aspx"
+                        target="_blank">DCA
+                        website</a></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>12</td>
+                <td>BULGARIA</td>
+                <td><a href="https://www.ead.eurocontrol.int/cms-eadbasic/opencms/en/login/ead-basic/"
+                        target="_blank">EAD BASIC</a></td>
+                <td>ID: koreanair2018 PW: koreanair2017</td>
+            </tr>
+            <tr>
+                <td>13</td>
+                <td>CAMBODIA</td>
+                <td>책자</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>14</td>
+                <td>CANADA</td>
+                <td><a href="https://tc.canada.ca/en/aviation/publications/transport-canada-aeronautical-information-manual-tc-aim-tp-14371"
+                        target="_blank">Canada
+                        AIP</a></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>15</td>
+                <td>CHILE</td>
+                <td>책자</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>16</td>
+                <td>CHINA</td>
+                <td><a href="http://www.aipchina.org/" target="_blank">CHINA AIP</a></td>
+                <td>ID: eaipjinair01 PW: jinair04</td>
+            </tr>
+            <tr>
+                <td>17</td>
+                <td>COLOMBIA</td>
+                <td><a href="https://www.aerocivil.gov.co/" target="_blank">COLOMBIA AIP</a></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>HONDURAS</td>
+                <td>Central American AIP</td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td>HONGHKONG</td>
+                <td><a href="https://www.ais.gov.hk/" target="_blank">HONG KONG AIP</a></td>
+                <td>free access</td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td>HUNGARY</td>
+                <td><a href="http://www.ead.eurocontrol.int/publicuser/public/pu/login.do" target="_blank">EAD BASIC</a>
+                </td>
+                <td>ID: koreanair2018 PW: koreanair2017</td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td>ICELAND</td>
+                <td><a href="http://www.ead.eurocontrol.int/publicuser/public/pu/login.do" target="_blank">EAD BASIC</a>
+                </td>
+                <td>ID: koreanair2018 PW: koreanair2017</td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td>INDIA</td>
+                <td><a href="https://aim-india.aai.aero/eaip/" target="_blank">INDIA AIP</a></td>
+                <td>free access</td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td>INDONESIA</td>
+                <td><a href="http://aimindonesia.info/" target="_blank">INDONESIA AIP</a></td>
+                <td>ID: sungjin.kim@koreanair.com PW: 123456 (무료가입가능)</td>
+            </tr>
+
+
+            <tr>
+                <td></td>
+                <td>IRAN</td>
+                <td></td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td>IRAQ</td>
+                <td><a href="http://www.iraqcaa.com/menu/aip.html" target="_blank">AIP Iraq</a></td>
+                <td>free access</td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td>IRELAND</td>
+                <td><a href="http://www.ead.eurocontrol.int/publicuser/public/pu/login.do" target="_blank">EAD BASIC</a>
+                </td>
+                <td>ID: koreanair2018 PW: koreanair2017</td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td>ISRAEL</td>
+                <td><a href="https://www.gov.il/en/departments/general/electronic-aip" target="_blank">ISRAEL AIP</a>
+                </td>
+                <td>free access</td>
+            </tr>
+
+
+            <tr>
+                <td></td>
+                <td>ITALY</td>
+                <td><a href="http://www.ead.eurocontrol.int/publicuser/public/pu/login.do" target="_blank">EAD BASIC</a>
+                </td>
+                <td>ID: koreanair2018 PW: koreanair2017</td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td>JAPAN</td>
+                <td><a href="https://aisjapan.mlit.go.jp/Login.do" target="_blank">JAPAN AIP</a></td>
+                <td>ID : twonkim / PW : rlaxo1</td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td>JORDAN</td>
+                <td><a href="http://www.ead.eurocontrol.int/publicuser/public/pu/login.do" target="_blank">EAD BASIC</a>
+                </td>
+                <td>ID: koreanair2018 PW: koreanair2017</td>
+            </tr>
+
+
+            <tr>
+                <td></td>
+                <td>KAZAKHSTAN</td>
+                <td><a href="http://www.ead.eurocontrol.int/publicuser/public/pu/login.do" target="_blank">EAD BASIC</a>
+                </td>
+                <td>ID: koreanair2018 PW: koreanair2017</td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td>KENYA</td>
+                <td>책자</td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td>KOREA</td>
+                <td><a href="http://ais.casa.go.kr/" target="_blank">KOREA AIP</a></td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td>KUWAIT</td>
+                <td><a href="https://dgca.gov.kw/AIP" target="_blank">KUWAIT AIP</a></td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td>KYRGYZSTAN</td>
+                <td><a href="http://www.kanservice.com/aip-aic.html" target="_blank">AIP,AIC</a></td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td>LAOS</td>
+                <td>책자</td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td>LATVIA</td>
+                <td><a href="http://www.ead.eurocontrol.int/publicuser/public/pu/login.do" target="_blank">EAD BASIC</a>
+                </td>
+                <td>ID: koreanair2018 PW: koreanair2017</td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td>LITHUANIA</td>
+                <td><a href="http://www.ead.eurocontrol.int/publicuser/public/pu/login.do" target="_blank">EAD BASIC</a>
+                </td>
+                <td>ID: koreanair2018 PW: koreanair2017</td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td>LUXEMBOURG</td>
+                <td><a href="http://www.ead.eurocontrol.int/publicuser/public/pu/login.do" target="_blank">EAD BASIC</a>
+                </td>
+                <td>ID: koreanair2018 PW: koreanair2017</td>
+            </tr>
+
+
+            <tr>
+                <td></td>
+                <td>MACAU</td>
+                <td><a href="http://www.aacm.gov.mo/english/aeronautical.php" target="_blank">Aeronautical Information
+                        Publication</a></td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td>MALAYSIA</td>
+                <td><a href="https://aip.caam.gov.my/aip/eAIP/history-en-MS.html" target="_blank">AIP Malaysia</a></td>
+                <td></td>
+            </tr>
+
+
+            <tr>
+                <td></td>
+                <td>MALDIVES</td>
+                <td><a href="http://www.aviainfo.gov.mv/publications/aip.php" target="_blank">MALDIVES AIP</a></td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td>MALTA</td>
+                <td><a href="http://www.ead.eurocontrol.int/publicuser/public/pu/login.do" target="_blank">EAD BASIC</a>
+                </td>
+                <td>ID: koreanair2018 PW: koreanair2017</td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td>MARSHALL IS.</td>
+                <td>[공항 일반 TEXT정보]<br>
+                    https://nfdc.faa.gov/xwiki/bin/view/NFDC/Airport+Data<br>
+                    [공항 CHART 정보] http://aeronav.faa.gov/index.asp?xml=aeronav/applications/d_tpp</td>
+                <td>ID: jinair01 PW: jinairocc0717</td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td>MEXICO</td>
+                <td>책자</td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td>MOLDOVA</td>
+                <td><a href="http://www.ead.eurocontrol.int/publicuser/public/pu/login.do">EAD BASIC</a></td>
+                <td>ID: koreanair2018 PW: koreanair2017</td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td>MOMGOLIA</td>
+                <td><a href="https://www.ais.mn/aipAip">MONGOLIA AIP</a></td>
+                <td>ID : chrhyoo / PW : chrhyoo21</td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td>MYANMAR</td>
+                <td><a href="https://www.ais.gov.mm/eAIP/2021-01-01/html/index-en-GB.html">MYANMAR AIP</a></td>
+                <td>fress access</td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td>NAURU</td>
+                <td></td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td>NEPAL</td>
+                <td><a href="https://e-aip.caanepal.gov.np/welcome/listall/1">NEPAL AIP</a></td>
+                <td>free access</td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td>NETHERLANDS</td>
+                <td><a href="http://www.ead.eurocontrol.int/publicuser/public/pu/login.do">EAD BASIC</a></td>
+                <td>ID: koreanair2018 PW: koreanair2017</td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td>NEW CALEDONIA</td>
+                <td><a href="https://www.sia.aviation-civile.gouv.fr/?___store=english">FRANCE AIP(포함됨)</a></td>
+                <td>프랑스 AIP WEB에서 열람가능</td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td>NEW ZEALAND</td>
+                <td><a href="http://www.aip.net.nz/">NEW ZEALAND AIP</a></td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td>NORWAY</td>
+                <td><a href="http://www.ead.eurocontrol.int/publicuser/public/pu/login.do">EAD BASIC</a></td>
+                <td>ID: koreanair2018 PW: koreanair2017</td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td>OMAN</td>
+                <td></td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td>PAKISTAN</td>
+                <td><a href="http://www.caapakistan.com.pk/aeronauticalinfoview.aspx">PAKISTAN AIP</a></td>
+                <td>ID: jinair01 PW: jinairocc0717</td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td>PALAU</td>
+                <td>[공항 일반 TEXT정보]<br>
+                    https://nfdc.faa.gov/xwiki/bin/view/NFDC/Airport+Data<br>
+                    [공항 CHART 정보] http://aeronav.faa.gov/index.asp?xml=aeronav/applications/d_tpp</td>
+                <td>ID: jinair01 PW: jinairocc0717</td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td>PARAGUAY</td>
+                <td>CD</td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td>PERU</td>
+                <td>책자</td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td>PHILIPPINES</td>
+                <td><a href="http://www.ead.eurocontrol.int/publicuser/public/pu/login.do">EAD BASIC</a></td>
+                <td>ID: koreanair2018 PW: koreanair2017</td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td>PHILIPPINES</td>
+                <td><a href="http://ats.caap.gov.ph/">PHILIPINES AIP</a></td>
+                <td>ID:LJ PW: FlyJNA<br>
+                    Station: AIP SUBSCRIBER<br>
+                    Company Name: JINAIR - REPUBLIC OF KOREA<br>
+                    유선 연락처: (632)-944-2264~6(Aeronautical Information)</td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td>POLAND</td>
+                <td><a href="http://www.ead.eurocontrol.int/publicuser/public/pu/login.do">EAD BASIC</a></td>
+                <td>ID: koreanair2018 PW: koreanair2017</td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td>PORTUGAL</td>
+                <td><a href="http://www.ead.eurocontrol.int/publicuser/public/pu/login.do">EAD BASIC</a></td>
+                <td>ID: koreanair2018 PW: koreanair2017</td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td>ROMANIA</td>
+                <td><a href="http://www.ead.eurocontrol.int/publicuser/public/pu/login.do">EAD BASIC</a></td>
+                <td>ID: koreanair2018 PW: koreanair2017</td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td>RUSSIA</td>
+                <td><a href="http://www.caiga.ru/products/">AIP AMDT, AIC</a></td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td>SAUDI ARABIA</td>
+                <td>CD</td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td>SINGAPORE</td>
+                <td><a
+                        href="https://www.caas.gov.sg/legislation-regulations/guidelines-advisory/air-navigation-services/aeronautical-information-publication-amendments">SINGAPORE
+                        AIP</a></td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td>SLOVAKIA</td>
+                <td><a href="http://www.ead.eurocontrol.int/publicuser/public/pu/login.do">EAD BASIC</a></td>
+                <td>ID: koreanair2018 PW: koreanair2017</td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td>SLOVENIA</td>
+                <td><a href="http://www.ead.eurocontrol.int/publicuser/public/pu/login.do">EAD BASIC</a></td>
+                <td>ID: koreanair2018 PW: koreanair2017</td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td>SOLOMON IS.</td>
+                <td>책자</td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td>SPAIN</td>
+                <td><a href="http://www.ead.eurocontrol.int/publicuser/public/pu/login.do">EAD BASIC</a></td>
+                <td>ID: koreanair2018 PW: koreanair2017</td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td>SRILANKA</td>
+                <td><a href="https://www.airport.lk/aasl/AIS/web.Home.htm">SRILANKA AIP</a></td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td>SWEDEN</td>
+                <td><a href="http://www.ead.eurocontrol.int/publicuser/public/pu/login.do">EAD BASIC</a></td>
+                <td>ID: koreanair2018 PW: koreanair2017</td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td>SWITZERLAND</td>
+                <td><a href="http://www.ead.eurocontrol.int/publicuser/public/pu/login.do">EAD BASIC</a></td>
+                <td>ID: koreanair2018 PW: koreanair2017</td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td>TAIWAN</td>
+                <td><a href="https://ais.caa.gov.tw/eaip/">eAIP Taiwan</a></td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td>TAJIKISTAN</td>
+                <td>CD</td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td>TANZANIA</td>
+                <td>책자</td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td>THAILAND</td>
+                <td><a href="https://ais.caat.or.th/">THAILAND AIP</a></td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td>TRUKEMENISTAN</td>
+                <td>CD</td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td>TURKEY</td>
+                <td><a href="http://www.ead.eurocontrol.int/publicuser/public/pu/login.do">EAD BASIC</a></td>
+                <td>ID: koreanair2018 PW: koreanair2017</td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td>U.A.E</td>
+                <td>CD</td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td>U.K</td>
+                <td><a href="http://www.ead.eurocontrol.int/publicuser/public/pu/login.do">EAD BASIC</a></td>
+                <td>ID: koreanair2018 PW: koreanair2017</td>
+            </tr>
+
+
+            <tr>
+                <td></td>
+                <td>U.S.A</td>
+                <td>[미국 AIP] <br>
+                    http://www.faa.gov/air_traffic/publications/<br>
+                    [공항 일반 TEXT정보] <br>
+                    https://nfdc.faa.gov/xwiki/bin/view/NFDC/Airport+Data<br>
+                    [공항 CHART 정보] http://aeronav.faa.gov/index.asp?xml=aeronav/applications/d_tpp</a></td>
+                <td>ID: jinair01 PW: jinairocc0717</td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td>UKRAINE</td>
+                <td><a href="http://www.ead.eurocontrol.int/publicuser/public/pu/login.do">EAD BASIC</a></td>
+                <td>ID: koreanair2018 PW: koreanair2017</td>
+            </tr>
+
+
+            <tr>
+                <td></td>
+                <td>UZBEKISTAN</td>
+                <td><a href="https://ais.uzairways.com/aip/main.htm">UZBEKISTAN AIP</a></td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td>VANUATU</td>
+                <td><a href="https://vli.vu/PILOTS___AIRCRAFT_OPERATORS.htm">VANUATU AIP</a></td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td>VIETNAM</td>
+                <td><a href="http://vnaic.vn/index.php?lang=en">VIETNAM AIP</a></td>
+                <td>ID:jinair PW: vnaic2013</td>
+            </tr>
+        </table>
+
+        <p>
         <h4>링크사이트</h4>
         http://s2.jetplan.com/ ID: jinair.1 PW: FlyJNA2023!!!!
         <h5>EAD</h5>
         [JNA] [ID] jinair01 [PW] jinairocc0717<br>
         [KAL] [ID] koreanair2018 [PW] koreanair2017<br>
         대한항공 계정이 더 좋음<br>
-        들어가는 법 > AIP LIBRARY > ADVANCED SEARCH 선택 
-    </p>
+        들어가는 법 > AIP LIBRARY > ADVANCED SEARCH 선택
+        </p>
 
-    <p>
+        <p>
         <h5>이메일</h5>
         일본 루트 문의(Air Traffic Management Center)<br>
         Tel: +81-92-608-8870 (Air Traffic Management Officer)<br>
         Mail: cab-atmc-atfm@gxb.mlit.go.jp
-    </p>
+        </p>
+
+    </main>
+</body>
