@@ -1,0 +1,61 @@
+.imgCat {
+    float: left;
+    clear: both;
+    /*float의 지랄맞은 자석기능 없애기*/
+}
+a {
+    color: rgb(12, 145, 132);
+    text-decoration: none;
+}
+h1 {
+    font-size: 50px;
+    text-align: center;
+}
+#navi {
+    height: 50px;
+    border-bottom: 1px solid #e5e5e5;
+}
+#navi ul li {
+    list-style: none;
+    float: right;
+    line-height: 50px;
+    vertical-align: middle; /*???*/
+    text-align: center;
+}
+#navi .menuNavi {
+    text-decoration: none;
+    color: rgb(12, 145, 132);
+    display: block;  /*글자영역 전체에 링크적용*/
+    width: 150px;
+    font-size: 15px;
+    font-weight: bold;
+}
+#navi a:hover,
+#navi a:focus {
+    color: rgb(145, 72, 145);
+}
+main {
+    width: 1000px;    /*전체 공간 1000픽셀*/
+    margin: 0px auto;    /*위 마진 0px 양쪽 마진 auto*/
+}
+#logo{
+    width:1000px;
+    margin: 20px auto;
+}
+table {
+    border-collapse: collapse;
+    margin:10px;
+    text-align: center;
+}
+td, th{
+    padding:3px;
+}
+@media(max-width:800px){
+    /*800px보다 작을때*/
+    #grid{
+        display:block;
+    }
+    #logo{
+        display:none;
+    }
+}

@@ -4,83 +4,24 @@
 <head>
     <title>FLEET LIST</title>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
     <style>
-        .imgCat {
-            float: left;
-            clear: both;
-            /*float의 지랄맞은 자석기능 없애기*/
-            margin: auto;
+        #grid {
+            display: grid;
+            grid-template-columns: 200px 1fr;
         }
-
-        a {
-            color: rgb(12, 145, 132);
-            text-decoration: none;
-        }
-
-        h1 {
-            font-size: 50px;
-            text-align: center;
-        }
-
-        main {
-            width: 1000px;
-            /*전체 공간 1000픽셀*/
-            margin: 20px auto;
-            /*위 마진 20px 양쪽 마진 auto*/
-        }
-
-        #logo {
-            width: 1000px;
-            margin: 20px auto;
-        }
-
-        #navi {
-            height: 50px;
-            border-bottom: 1px solid #e5e5e5;
-        }
-
-        #navi ul li {
-            list-style: none;
-            float: right;
-            line-height: 50px;
-            vertical-align: middle;
-            /*???*/
-            text-align: center;
-        }
-
-        #navi .menuNavi {
-            text-decoration: none;
-            color: rgb(12, 145, 132);
-            display: block;
-            /*글자영역 전체에 링크적용*/
-            width: 150px;
-            font-size: 15px;
-            font-weight: bold;
-        }
-
-        #navi a:hover,
-        #navi a:focus {
-            color: rgb(145, 72, 145);
-        }
-        table {
-            border-collapse: collapse;
-            margin:10px;
-            text-align: center;
-        }
-        td, th{
-            padding:3px;
+        #fleet{
+            border-right: 1px solid #e5e5e5;
         }
     </style>
 </head>
 
 <body>
     <header>
-        
+
         <div id="logo">
-            <img src="cat2.jpg" width="200" class="imgCat">
-            <a href="#">
-                <h1><a href="1.html">JIN</a> AIRFLEET LIST</h1>
-            </a>
+            <img src="cat1.jpg" width="150" class="imgCat">
+            <h1>AIRFLEET LIST</h1>
             <br>
         </div>
 
@@ -88,87 +29,94 @@
             <ul id="topMenu">
                 <li><a href="2.html" class="menuNavi">AIP</a></li>
                 <li><a href="3.html" class="menuNavi">FLEET LIST</a></li>
+                <li><a href="4.html" class="menuNavi">MEMO</a></li>
+                <li><a href="1.html" class="menuNavi">PHONE</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <h4>보유 기종</h4>
-        <table border="3">
-            <th>기종</th>
-            <th>대수</th>
-            <th>좌석수</th>
-            <tr>
-                <td>B772</td>
-                <td>4</td>
-                <td>393</td>
-            </tr>
-            <tr>
-                <td>B738</td>
-                <td>19</td>
-                <td>189</td>
-            </tr>
-            <tr>
-                <td>B739</td>
-                <td>3</td>
-                <td>188</td>
-            </tr>
-            <tr>
-                <td>B38M</td>
-                <td>1</td>
-                <td>189</td>
-            </tr>
-            <tr>
-                <td>합계</td>
-                <td>27</td>
-            </tr>
-        </table>
+        <div id="grid">
+            <div id="fleet">
+                <h4>보유 기종</h4>
+                <table border="3">
+                    <th>기종</th>
+                    <th>대수</th>
+                    <th>좌석수</th>
+                    <tr>
+                        <td>B772</td>
+                        <td>4</td>
+                        <td>393</td>
+                    </tr>
+                    <tr>
+                        <td>B738</td>
+                        <td>19</td>
+                        <td>189</td>
+                    </tr>
+                    <tr>
+                        <td>B739</td>
+                        <td>3</td>
+                        <td>188</td>
+                    </tr>
+                    <tr>
+                        <td>B38M</td>
+                        <td>1</td>
+                        <td>189</td>
+                    </tr>
+                    <tr>
+                        <td>합계</td>
+                        <td>27</td>
+                    </tr>
+                </table>
+            </div>
+            <div style="margin-left:20px">
+                <h5>B772</h5>
+                <ul>
+                    <li>HL7733</li>
+                    <li>HL7734</li>
+                    <li>HL7743</li>
+                    <li>HL7750</li>
+                </ul>
 
-        <h5>B772</h5>
-        <ul>
-            <li>HL7733</li>
-            <li>HL7734</li>
-            <li>HL7743</li>
-            <li>HL7750</li>
-        </ul>
+                <h5>B738-MAX</h5>
+                <ul>
+                    <li>HL8353</li>
+                </ul>
 
-        <h5>B738-MAX</h5>
-        <ul>
-            <li>HL8353</li>
-        </ul>
+                <h5>B739</h5>
+                <ul>
+                    <li>HL7718(B737-9B5)</li>
+                    <li>HL7719(B737-9B5)</li>
+                    <li>HL7724(B737-9B5)</li>
+                </ul>
 
-        <h5>B739</h5>
-        <ul>
-            <li>HL7718(B737-9B5)</li>
-            <li>HL7719(B737-9B5)</li>
-            <li>HL7724(B737-9B5)</li>
-        </ul>
+                <h5>B737-800W</h5>
+                <ul>
+                    <li>HL7560(737-8B5)</li>
+                    <li>HL7561(737-8B5)</li>
+                    <li>HL7562(737-8B5)</li>
+                    <li>HL7757(737-8GQ)</li>
+                    <li>HL7786(737-8Q8)</li>
+                </ul>
 
-        <h5>B738W</h5>
-        <ul>
-            <li>HL7560(737-8B5)</li>
-            <li>HL7561(737-8B5)</li>
-            <li>HL7562(737-8B5)</li>
-            <li>HL7757(737-8GQ)</li>
-            <li>HL7786(737-8Q8)</li>
-        </ul>
-
-        <h5>B737-800WSFD</h5>
-        <ul>
-            <li>HL8012(737-8SH)</li>
-            <li>HL8013(737-8SH)</li>
-            <li>HL8014(737-8SH)</li>
-            <li>HL8015(737-8SH)</li>
-            <li>HL8016(737-8SH)</li>
-            <li>HL8017(737-8SH)</li>
-            <li>HL8224(737-8Q8)</li>
-            <li>HL8225(737-8Q8)</li>
-            <li>HL8242(737-8Q8)</li>
-            <li>HL8243(737-8Q8)</li>
-            <li>HL8244(737-8Q8)</li>
-            <li>HL8245(737-8Q8)</li>
-            <li>HL8246(737-8SH)</li>
-            <li>HL8247(737-8SH)</li>
-        </ul>
+                <h5>B737-800WSFD</h5>
+                <ul>
+                    <li>HL8012(737-8SH)</li>
+                    <li>HL8013(737-8SH)</li>
+                    <li>HL8014(737-8SH)</li>
+                    <li>HL8015(737-8SH)</li>
+                    <li>HL8016(737-8SH)</li>
+                    <li>HL8017(737-8SH)</li>
+                    <li>HL8224(737-8Q8)</li>
+                    <li>HL8225(737-8Q8)</li>
+                    <li>HL8242(737-8Q8)</li>
+                    <li>HL8243(737-8Q8)</li>
+                    <li>HL8244(737-8Q8)</li>
+                    <li>HL8245(737-8Q8)</li>
+                    <li>HL8246(737-8SH)</li>
+                    <li>HL8247(737-8SH)</li>
+                </ul>
+            </div>
+        </div>
     </main>
 </body>
