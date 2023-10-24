@@ -20,14 +20,19 @@
         }
         #lay,
         #lay2 {
-            margin-left: 10px;
+            margin-left: 33px;
         }
         h3 {
-            margin-top: 10px;
+            margin-top: 18px;
         }
         h4 {
             margin: 0;
             color: rgb(22, 156, 22);
+        }
+        ol{
+            list-style:none;
+            margin: 0;
+            padding:0;
         }
     </style>
 </head>
@@ -45,6 +50,7 @@
                 <li><a href="3.html" class="menuNavi">FLEET LIST</a></li>
                 <li><a href="4.html" class="menuNavi">MEMO</a></li>
                 <li><a href="1.html" class="menuNavi">PHONE</a></li>
+                <li><a href="5.html" class="menuNavi">W23편명</a></li>
             </ul>
         </nav>
     </header>
@@ -142,7 +148,12 @@
                 <li>GUM[PGUM]</li>
                 <li>SPN[PGSN]</li>
                 <li>UAN[PGUA]</li>
-                <li>HNL[PHNL]</li>
+                <li>HNL[PHNL]</li><br>
+
+                <li>---시즌---</li>
+                <li>3월~10월 : summer</li>
+                <li>10월~3월 : winter</li>
+                <li>마지막주 일요일</li>
 
             </ul>
             <div id="lay">
@@ -366,6 +377,22 @@
                 08L/26R : 12312FT X 150FT 08R/26L : 12000FT X 200FT<br>
                 04R/22L : 9002FT X 150FT 04L/22R : 6955FT X 150FT<br>
                 </p>
+
+               
+                <ol>
+                    <h3>-----------AMOS LIST-----------</h3>
+                    <li><a href="https://www.metobs.go.jp/air_web/web/jsp/login.jsp" target="_blank">일본 AMOS</a></li>
+                    <li><a href="https://aoaws.anws.gov.tw/AWS/index.php" target="_blank">대만 AMOS</a></li>
+                    <li><a href="http://nemcaac.cn/dbinfo/app/common/awos/index?cccc=ZSPD" target="_blank">중국 AMOS</a></li>
+                    <li><a href="https://www.pagasa.dost.gov.ph/" target="_blank">필리핀 PAGASA</a></li>
+                </ol>
+                <h5>일본 AMOS ID/PW</h5>
+                ID : jna001 PW: Ajna001 <br>
+                ID : jna002 PW : Ajna002 
+                <h5>대만 AMOS ID/PW </h5>
+                ID : jinair01 PW : Jinair06!
+                <h5>WINDY AMOS ID/PW</h5>
+                ID : engmath PW : shdudtn01<br>
             </div>
             <div id="lay2">
                 <p>
@@ -411,6 +438,8 @@
                 ENVAR : 1700-0059 밤에만 열림(HK AIP ENR 1.10.9)<br>
                 KAPLI : 2200-1600 낮에만 열림 J01D<br>
                 근데 밤에 ENVAR 못쓰면 KAPLI-IGURU 조건부로 사용가능(TP 1.8.2)<br>
+                VTE N01 TAMMOT-KAPLI 주의!! 안됨<br>
+                차라리 TAMMOT - ELATO 가자<br>
                 </p>
                 <p>
                 <h3>----STATION 주의사항----</h3>
@@ -470,7 +499,10 @@
                 베트남 : 지점<br>
                 대만 : AFTN<br>
                 캄보디아 : 메일<br>
-                라오스 : 메일
+                라오스 : 메일 <br>
+                필리핀 : AFTN <br>
+                * 마닐라 : RPLLYIYX
+
                 </p>
                 <p>
                 <h3>--- Revalidated Clearance 가 요구되는 경우---</h3>
@@ -523,8 +555,12 @@
                 777<br>
                 메인 64,100 + 64,100 = 128,200<br>
                 센터 174,900<br>
-                TTL 303,100<br>
-                <br>
+                TTL 303,100<br><br>
+
+                여름철 비중계산하기 : 비중(약6.61) * 6875(부피) = 45443.75LBS<br><br>
+
+        
+                <h3>----NOTAM 문의하기----</h3>
                 국내 공역 정보과 053-668-0259<br>
                 항공 교통 조정과 053-668-0446<br>
                 </p>
@@ -581,10 +617,7 @@
                     Class C 작은 공항 ~5000 피트<br>
                     Class D FL200이하 모든 항로<br>
                     CLASS E 1000 ~ FL600<br>
-                    CLASS G 5500FT 미만<br>
-
-                    VTE N01 TAMMOT-KAPLI 주의!! 안됨<br>
-                    차라리 TAMMOT - ELATO 가자<br>
+                    CLASS G 5500FT 미만<br><br>
 
 
                     LDA : RCSS 절차 OFFSET LOCALIZER<br>
@@ -641,6 +674,11 @@
                 FL290으로 운항 가능 MEA FL140 (FAA AIP ENR 7.4.2. Oakland(KZAK) Oceanic Airspace)<br>
                 미국 AIP : G339 PACIFIC ROUTE로 구분<br>
                 </p>
+
+                <h3>----BALANCE 허용범위----</h3>
+                LMC(LAST MIN CHANGE)로 CG 변동시 L/S 수정필요<br>
+                CG MAC(MACTOW)가 0.5이상 차이가 있을 경우 LS 새로 작성<br>
+                항공기 탑재메뉴얼 ALM 6.5.2.2<br>
             </div>
         </div>
     </main>
