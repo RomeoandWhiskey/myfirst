@@ -8,7 +8,7 @@
     <style>
         #grid {
             display: grid;
-            grid-template-columns: 200px 1fr;
+            grid-template-columns: 200px 1fr 1fr 1fr;
         }
         #fleet{
             border-right: 1px solid #e5e5e5;
@@ -39,27 +39,32 @@
     <main>
         <div id="grid">
             <div id="fleet">
-                <h4>보유 기종</h4>
+                <h4>LJ 보유 기종</h4>
                 <table border="3">
+                    <th>기종 종류</th>
                     <th>기종</th>
                     <th>대수</th>
                     <th>좌석수</th>
                     <tr>
+                        <td>1</td>
                         <td>B772</td>
                         <td>4</td>
                         <td>393</td>
                     </tr>
                     <tr>
+                        <td>2</td>
                         <td>B738</td>
                         <td>19</td>
                         <td>189</td>
                     </tr>
                     <tr>
+                        <td>3</td>
                         <td>B739</td>
                         <td>3</td>
                         <td>188</td>
                     </tr>
                     <tr>
+                        <td>4</td>
                         <td>B38M</td>
                         <td>1</td>
                         <td>189</td>
@@ -69,8 +74,73 @@
                         <td>27</td>
                     </tr>
                 </table>
+                <h4>BX 보유 기종</h4>
+                <table border="3">
+                    <th>기종 종류</th>
+                    <th>기종</th>
+                    <th>대수</th>
+                    <th>좌석수</th>
+                    <tr>
+                        <td>1</td>
+                        <td>A321neoLR</td>
+                        <td>2</td>
+                        <td>220</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>A321neo</td>
+                        <td>4</td>
+                        <td>232</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">3</td>
+                        <td>A321-200</td>
+                        <td>5</td>
+                        <td>195</td>
+                    </tr>
+                    <tr>
+                        <td>A321-200</td>
+                        <td>4</td>
+                        <td>220</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>A320-200</td>
+                        <td>6</td>
+                        <td>180</td>
+                    </tr>
+                    <tr>
+                        <td>합계</td>
+                        <td>21</td>
+                    </tr>
+                </table>
+                <h4>RS 보유 기종</h4>
+                <table border="3">
+                    <th>기종 종류</th>
+                    <th>기종</th>
+                    <th>대수</th>
+                    <th>좌석수</th>
+                    <tr>
+                        <td rowspan="2">1</td>
+                        <td>A321-200</td>
+                        <td>3</td>
+                        <td>195</td>
+                    </tr>
+                    <tr>
+                        <td>A321-200</td>
+                        <td>3</td>
+                        <td>220</td>
+                    </tr>
+                    <tr>
+                        <td>합계</td>
+                        <td>6</td>
+                    </tr>
+
+                  
+                </table>
             </div>
-            <div style="margin-left:20px">
+            <div id="lj" style="margin-left:20px">
+                <h4>LJ기종</h4>
                 <h5>B772</h5>
                 <ul>
                     <li>HL7733</li>
@@ -117,6 +187,63 @@
                     <li>HL8246(737-8SH)</li>
                     <li>HL8247(737-8SH)</li>
                 </ul>
+                </div>
+<div id="bx">
+                <h4>BX기종</h4>
+                <h5>A321neoLR</h5>
+                <ul>
+                    <li>HL8366(3년식)</li>
+                    <li>HL8394(3년식)</li>
+                </ul>
+
+                <h5>A321neo</h5>
+                <ul>
+                    <li>HL8395(2년식)</li>
+                    <li>HL8396(2년식)</li>
+                    <li>HL8357(2년식)</li>
+                    <li>HL8504(1년식)</li>
+                </ul>
+
+                <h5>A321-200</h5>
+                <ul>
+                    <li>HL7722(20년식)</li>
+                    <li>HL7723(20년식)</li>
+                    <li>HL7729(19년식)</li>
+                    <li>HL7730(19년식)</li>
+                    <li>HL7763(16년식)</li>
+                    <li>HL8365(14년식)</li>
+                    <li>HL7210(6년식)</li>
+                    <li>HL8099(6년식)</li>
+                    <li>HL7211(6년식)</li>
+                </ul>
+
+                <h5>A320-200</h5>
+                <ul>
+                    <li>HL7744(17년식)</li>
+                    <li>HL7745(17년식)</li>
+                    <li>HL7753(17년식)</li>
+                    <li>HL8055(17년식)</li>
+                    <li>HL8309(11년식)</li>
+                    <li>HL8328(11년식)</li>
+                </ul>
+                <br><br>
+                항공기 년식 정보는 2023-11 기준<br>
+                <a href="https://www.planespotters.net/airline/Air-Busan" target="_blank">에어부산 항공기 정보 링크</a>
+            </div>
+            <div id="rs">
+                <h4>RS기종</h4>
+                <h5>A321-200</h5>
+                <ul>
+                    <li>HL8255(11년식)</li>
+                    <li>HL7790(13년식)</li>
+                    <li>HL7212(5년식)</li>
+                    <li>HL7789(13년식)</li>
+                    <li>HL8073(17년식)</li>
+                    <li>HL8072(17년식)</li>
+                </ul>
+                <br><br>
+                항공기 년식 정보는 2023-11 기준<br>
+                <a href="https://www.planespotters.net/airline/Air-Seoul" target="_blank">에어서울 항공기 정보 링크</a>
             </div>
         </div>
     </main>
